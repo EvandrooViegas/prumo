@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #e3ad3b;
+  --gold-dark: #c8962e;
+  --dark: #100b00;
+  --gray: #dddddd;
+  --light: #ebebeb;
+}
+
+html,
+body {
+  background: #ffffff;
+  color: #100b00;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-helvetica), system-ui, sans-serif;
+}
+
+::selection {
+  background: #e3ad3b;
+  color: #100b00;
+}
+
+.font-title {
+  font-family: var(--font-anton), Impact, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Hero overlay gradient (dark image treatment matching design) */
+.hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 11, 0, 0.55) 0%,
+    rgba(16, 11, 0, 0.75) 60%,
+    rgba(16, 11, 0, 0.92) 100%
+  );
+}
+
+/* Generic dark overlay for project tiles */
+.tile-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 11, 0, 0.15) 0%,
+    rgba(16, 11, 0, 0.55) 55%,
+    rgba(16, 11, 0, 0.92) 100%
+  );
+}
+
+/* "Eyebrow" pill used across sections (e.g. "O QUE FAZEMOS") */
+.eyebrow {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  border: 2px solid #e3ad3b;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #100b00;
+  background: transparent;
+}
+
+.eyebrow-dark {
+  display: inline-block;
+  padding: 0.55rem 1.25rem;
+  background: #e3ad3b;
+  color: #100b00;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Custom button styles to match the squared "ENTRAR EM CONTACTO" CTA */
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e3ad3b;
+  color: #100b00;
+  padding: 0.95rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn-gold:hover {
+  background: #c8962e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -10px rgba(227, 173, 59, 0.6);
+}
+
+.btn-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid #e3ad3b;
+  color: #ffffff;
+  background: transparent;
+  padding: 0.95rem 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.btn-outline-gold:hover {
+  background: #e3ad3b;
+  color: #100b00;
+  transform: translateY(-2px);
+}
+
+/* Underline animation for nav links */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+  color: #ffffff;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #e3ad3b;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link[data-active="true"]::after {
+  width: 100%;
+}
+
+/* Subtle grain on dark sections for depth */
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
