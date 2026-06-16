@@ -40,7 +40,8 @@ export default function OrcamentoPage() {
       <PageHero
         title={t.quote.heroTitle.toUpperCase()}
         subtitle={t.quote.heroSubtitle}
-        image={IMAGES.heroPages}
+        image={IMAGES.heroQuote}
+        objectPosition="center 50%"
         testId="orcamento-hero"
       />
 

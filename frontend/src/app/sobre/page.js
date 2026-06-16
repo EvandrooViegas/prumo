@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/components/LanguageProvider";
 import { IMAGES } from "@/lib/images";
@@ -13,49 +15,96 @@ export default function SobrePage() {
       <PageHero
         title={t.about.heroTitle.toUpperCase()}
         subtitle={t.about.heroSubtitle}
-        image={IMAGES.heroPages}
+        image={IMAGES.heroAbout}
+        objectPosition="center 30%"
         testId="sobre-hero"
       />
 
-      {/* MISSION */}
-      <section
-        className="bg-brand-light py-20 md:py-28"
-        data-testid="sobre-mission-section"
-      >
+      {/* MISSION & VISION */}
+      <section className="bg-brand-light py-20 md:py-28" data-testid="sobre-mission-section">
         <div className="container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12">
           <div>
             <span className="eyebrow">{t.about.eyebrowMission}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark">
-              {t.about.titleMission}
-            </h2>
-            <p className="mt-6 max-w-md text-brand-dark/70 text-[15px] leading-relaxed">
-              {t.about.missionText}
-            </p>
-            <div className="mt-8 relative h-[420px] overflow-hidden">
+            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark">{t.about.titleMission}</h2>
+
+            <div className="mt-8 space-y-8">
+              {/* Mission */}
+              <div className="border-l-4 border-brand-gold pl-6">
+                <h3 className="font-title uppercase text-2xl text-brand-dark tracking-wide">
+                  {t.nav.about === "About us" ? "Mission" : "Missão"}
+                </h3>
+                <p className="mt-3 text-brand-dark/70 text-[15px] leading-relaxed">{t.about.missionText}</p>
+              </div>
+              {/* Vision */}
+              <div className="border-l-4 border-brand-dark pl-6">
+                <h3 className="font-title uppercase text-2xl text-brand-dark tracking-wide">
+                  {t.nav.about === "About us" ? "Vision" : "Visão"}
+                </h3>
+                <p className="mt-3 text-brand-dark/70 text-[15px] leading-relaxed">{t.about.visionText}</p>
+              </div>
+            </div>
+
+            <Link
+              href="/orcamento"
+              className="mt-10 btn-gold"
+              data-testid="sobre-cta"
+            >
+              {t.cta.contact} <ArrowRight size={16} />
+            </Link>
+          </div>
+
+          <div className="space-y-5">
+            {/* Main tall image — Sumol wide landscape */}
+            <div className="relative overflow-hidden" style={{ height: "460px" }}>
               <Image
-                src={IMAGES.about}
-                alt="Worker on site"
+                src={IMAGES.about1}
+                alt="PRUMO — equipa em obra"
                 fill
                 className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width:1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 tile-overlay" />
             </div>
+            {/* Two supplementary images */}
+            <div className="grid grid-cols-2 gap-5">
+              <div className="relative overflow-hidden" style={{ height: "260px" }}>
+                <Image
+                  src={IMAGES.about2}
+                  alt="Gestão de obra"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width:1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="relative overflow-hidden" style={{ height: "260px" }}>
+                <Image
+                  src={IMAGES.about3}
+                  alt="Construção civil"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width:1024px) 50vw, 25vw"
+                />
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="space-y-6">
-            {t.about.pillars.map((p, i) => (
-              <div
-                key={i}
-                className="bg-white border border-brand-gray p-7 lg:p-9"
-                data-testid={`sobre-pillar-${i}`}
-              >
-                <h3 className="font-title uppercase tracking-wider text-2xl text-brand-dark text-center pb-4 border-b border-brand-gray/60">
-                  {`${t.nav.about === "About us" ? "Mission" : "Missão"} ${i + 1}`}
-                </h3>
-                <p className="mt-5 text-brand-dark/70 text-[14.5px] leading-relaxed text-center">
-                  {p.desc}
-                </p>
+      {/* VALUES */}
+      <section className="bg-white py-20 md:py-28" data-testid="sobre-values-section">
+        <div className="container mx-auto px-6 lg:px-10">
+          <div className="text-center mb-14">
+            <span className="eyebrow">{t.about.eyebrowValues}</span>
+            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark">{t.about.titleValues}</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {t.about.values.map((v, i) => (
+              <div key={i} className="bg-brand-light border border-brand-gray p-7 hover:border-brand-gold transition-colors duration-300 group" data-testid={`sobre-value-${i}`}>
+                <div className="w-10 h-10 bg-brand-gold flex items-center justify-center mb-4">
+                  <span className="font-title text-brand-dark text-xl">{String(i + 1).padStart(2, "0")}</span>
+                </div>
+                <h3 className="font-title uppercase text-xl text-brand-dark tracking-wider">{v.title}</h3>
+                <p className="text-brand-dark/65 text-sm leading-relaxed mt-3">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -63,32 +112,20 @@ export default function SobrePage() {
       </section>
 
       {/* NUMBERS */}
-      <section
-        className="relative bg-brand-dark text-white py-20 md:py-28 grain"
-        data-testid="sobre-numbers-section"
-      >
-        <div className="container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-start relative z-10">
-          <div>
+      <section className="relative bg-brand-dark text-white py-24 md:py-32 grain overflow-hidden" data-testid="sobre-numbers-section">
+        <div className="absolute inset-0 opacity-15">
+          <Image src={IMAGES.siteWide3} alt="" fill className="object-cover" sizes="100vw" />
+        </div>
+        <div className="container mx-auto px-6 lg:px-10 relative z-10">
+          <div className="text-center mb-14">
             <span className="eyebrow-dark">{t.about.eyebrowNumbers}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 leading-[0.95]">
-              {t.about.titleNumbers}
-            </h2>
+            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5">{t.about.titleNumbers}</h2>
           </div>
-          <div className="space-y-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {t.about.stats.map((s, i) => (
-              <div
-                key={i}
-                className="bg-brand-gray text-brand-dark p-6 lg:p-7"
-                data-testid={`sobre-stat-${i}`}
-              >
-                <div className="flex items-baseline gap-3">
-                  <span className="font-title text-3xl text-brand-goldDark">
-                    {s.value}
-                  </span>
-                  <span className="font-title uppercase text-2xl tracking-wide">
-                    {s.label}
-                  </span>
-                </div>
+              <div key={i} className="bg-white/5 border border-white/10 p-8 text-center hover:border-brand-gold transition-colors" data-testid={`sobre-stat-${i}`}>
+                <div className="font-title text-brand-gold text-5xl md:text-6xl">{s.value}</div>
+                <div className="font-title uppercase text-white text-lg tracking-wider mt-2">{s.label}</div>
               </div>
             ))}
           </div>

@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Apply Impact font specifically to Ç (U+00C7) and ç (U+00E7) characters */
+@font-face {
+  font-family: "HelveticaWithImpactCedilla";
+  src: local("Impact"), local("impact");
+  unicode-range: U+00C7, U+00E7;
+}
+@font-face {
+  font-family: "AntonWithImpactCedilla";
+  src: local("Impact"), local("impact");
+  unicode-range: U+00C7, U+00E7;
+}
+
 :root {
   --gold: #e3ad3b;
   --gold-dark: #c8962e;
@@ -18,7 +30,7 @@ body {
 }
 
 body {
-  font-family: var(--font-helvetica), system-ui, sans-serif;
+  font-family: "HelveticaWithImpactCedilla", var(--font-helvetica), system-ui, sans-serif;
 }
 
 ::selection {
@@ -27,7 +39,7 @@ body {
 }
 
 .font-title {
-  font-family: var(--font-anton), Impact, sans-serif;
+  font-family: "AntonWithImpactCedilla", var(--font-anton), Impact, sans-serif;
   letter-spacing: 0.01em;
 }
 
@@ -135,6 +147,17 @@ body {
 .nav-link:hover::after,
 .nav-link[data-active="true"]::after {
   width: 100%;
+}
+
+/* Slogan highlight — italic gold words */
+.slogan-highlight {
+  font-style: italic;
+  color: #e3ad3b;
+}
+
+/* Values card hover border */
+.values-card:hover {
+  border-color: #e3ad3b;
 }
 
 /* Subtle grain on dark sections for depth */

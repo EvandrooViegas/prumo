@@ -17,6 +17,7 @@ export default function Header() {
     { href: "/sobre", label: t.nav.about, key: "about" },
     { href: "/servicos", label: t.nav.services, key: "services" },
     { href: "/projetos", label: t.nav.projects, key: "projects" },
+    { href: "/bim", label: t.nav.bim, key: "bim" },
     { href: "/contacto", label: t.nav.contact, key: "contact" },
   ];
 

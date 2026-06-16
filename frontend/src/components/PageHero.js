@@ -1,16 +1,19 @@
-// Reusable hero section used by all sub-pages (Sobre nós, Serviços, Projetos, Orçamento)
-// Big Anton title centred over a darkened construction image.
+// Reusable hero used by all sub-pages — full viewport, image-forward.
+// Each page passes its own unique image so they all look distinct.
 import Image from "next/image";
 
 export default function PageHero({
   title,
   subtitle,
-  image = "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80",
+  image,
+  // objectPosition lets callers fine-tune what part of the image is centred
+  objectPosition = "center",
   testId = "page-hero",
 }) {
   return (
     <section
-      className="relative min-h-[80vh] flex items-center justify-center overflow-hidden"
+      className="relative flex items-end overflow-hidden"
+      style={{ minHeight: "85vh" }}
       data-testid={testId}
     >
       <Image
@@ -19,20 +22,24 @@ export default function PageHero({
         fill
         priority
         className="object-cover"
+        style={{ objectPosition }}
         sizes="100vw"
       />
-      <div className="absolute inset-0 hero-overlay" />
-      <div className="relative z-10 container mx-auto px-6 lg:px-10 pt-32 pb-16 text-center">
+      {/* Stronger gradient bottom-up so text is always readable */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[rgba(16,11,0,0.92)] via-[rgba(16,11,0,0.45)] to-[rgba(16,11,0,0.2)]" />
+
+      <div className="relative z-10 w-full container mx-auto px-6 lg:px-10 pb-20 pt-40">
         <h1
-          className="font-title text-white uppercase text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-[0.95] tracking-tight animate-fade-up"
+          className="font-title text-white uppercase leading-[0.9] tracking-tight animate-fade-up"
+          style={{ fontSize: "clamp(3.5rem, 8.5vw, 9rem)" }}
           data-testid="page-hero-title"
         >
           {title}
         </h1>
         {subtitle && (
           <p
-            className="mt-6 max-w-2xl mx-auto text-white/85 text-base md:text-lg leading-relaxed animate-fade-up"
-            style={{ animationDelay: "120ms" }}
+            className="mt-7 max-w-2xl text-white/80 text-base md:text-lg leading-relaxed animate-fade-up"
+            style={{ animationDelay: "130ms" }}
             data-testid="page-hero-subtitle"
           >
             {subtitle}

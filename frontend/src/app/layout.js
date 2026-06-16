@@ -19,11 +19,17 @@ const helvetica = Roboto({
 });
 
 export const metadata = {
-  title: "PRUMO Soalheiro, Lda. — Construção Civil & Obras Públicas",
+  title: "PRUMO SOALHEIRO — Visão para Projetar. Coragem para Construir.",
   description:
-    "PRUMO Soalheiro, Lda. — Empresa portuguesa de construção civil, obras públicas e serviços de engenharia. Peça o seu orçamento.",
+    "PRUMO SOALHEIRO — Soluções integradas de engenharia, construção e gestão de projetos. Projeto, Construção, Gestão, Investigação e Formação. Peça o seu orçamento.",
+  keywords: "engenharia, construção, BIM, reabilitação, fachadas, gestão de projetos, Portugal",
   icons: {
     icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "PRUMO SOALHEIRO — Visão para Projetar. Coragem para Construir.",
+    description: "Soluções integradas de engenharia, construção e gestão de projetos.",
+    type: "website",
   },
 };
 

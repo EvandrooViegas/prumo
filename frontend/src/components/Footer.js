@@ -40,6 +40,7 @@ export default function Footer() {
     { href: "/sobre", label: t.nav.about },
     { href: "/servicos", label: t.nav.services },
     { href: "/projetos", label: t.nav.projects },
+    { href: "/bim", label: t.nav.bim },
     { href: "/orcamento", label: t.nav.quote },
     { href: "/contacto", label: t.nav.contact },
   ];
