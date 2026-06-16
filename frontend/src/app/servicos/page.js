@@ -7,23 +7,24 @@ import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/components/LanguageProvider";
 import { IMAGES } from "@/lib/images";
 
-const serviceImages = [
-  IMAGES.service1,
-  IMAGES.service2,
-  IMAGES.service3,
-  IMAGES.service4,
-  IMAGES.service5,
-];
-
 export default function ServicosPage() {
   const { t } = useLanguage();
+
+  // Each service tile image maps directly to its area
+  const serviceImages = [
+    IMAGES.services.design,       // Projeto / Design
+    IMAGES.services.construction, // Construção / Construction
+    IMAGES.services.management,   // Gestão / Management
+    IMAGES.services.research,     // Investigação & Inovação
+    IMAGES.services.training,     // Formação / Training
+  ];
 
   return (
     <>
       <PageHero
         title={t.services.heroTitle.toUpperCase()}
         subtitle={t.services.heroSubtitle}
-        image={IMAGES.heroServices}
+        image={IMAGES.heroes.services}
         objectPosition="center 40%"
         testId="servicos-hero"
       />
@@ -31,39 +32,35 @@ export default function ServicosPage() {
       <section className="bg-brand-light py-20 md:py-28" data-testid="servicos-content">
         <div className="container mx-auto px-6 lg:px-10 space-y-6">
 
-          {/* Row 1: Service 1 (large) + Service 2 */}
+          {/* Row 1: Design (large) + Construction */}
           <div className="grid lg:grid-cols-3 gap-6">
-            <ServiceTile service={t.services.list[0]} image={serviceImages[0]} index={0} tall className="lg:col-span-2" />
-            <ServiceTile service={t.services.list[1]} image={serviceImages[1]} index={1} tall />
+            <ServiceTile service={t.services.list[0]} image={serviceImages[0]} index={0} className="lg:col-span-2" />
+            <ServiceTile service={t.services.list[1]} image={serviceImages[1]} index={1} />
           </div>
 
-          {/* Row 2: text card + Service 3 (large) */}
+          {/* Row 2: CTA card + Management (large) */}
           <div className="grid lg:grid-cols-3 gap-6">
-            <aside className="bg-brand-dark text-white p-10 flex flex-col justify-between min-h-[420px]" data-testid="servicos-side-card">
+            <aside className="bg-brand-dark text-white p-10 flex flex-col justify-between min-h-[540px]" data-testid="servicos-side-card">
               <div>
                 <h3 className="font-title uppercase text-3xl text-brand-gold">PRUMO SOALHEIRO</h3>
                 <p className="mt-5 text-white/75 text-[15px] leading-relaxed">{t.services.sideCardCopy}</p>
               </div>
-              <Link
-                href="/orcamento"
-                className="mt-8 btn-gold self-start"
-                data-testid="servicos-side-cta"
-              >
+              <Link href="/orcamento" className="mt-8 btn-gold self-start" data-testid="servicos-side-cta">
                 {t.cta.contact} <ArrowRight size={14} />
               </Link>
             </aside>
-            <ServiceTile service={t.services.list[2]} image={serviceImages[2]} index={2} tall className="lg:col-span-2" />
+            <ServiceTile service={t.services.list[2]} image={serviceImages[2]} index={2} className="lg:col-span-2" />
           </div>
 
-          {/* Row 3: Services 4 & 5 equally sized */}
+          {/* Row 3: Research & Innovation + Training */}
           <div className="grid lg:grid-cols-2 gap-6">
-            <ServiceTile service={t.services.list[3]} image={serviceImages[3]} index={3} tall />
-            <ServiceTile service={t.services.list[4]} image={serviceImages[4]} index={4} tall />
+            <ServiceTile service={t.services.list[3]} image={serviceImages[3]} index={3} />
+            <ServiceTile service={t.services.list[4]} image={serviceImages[4]} index={4} />
           </div>
         </div>
       </section>
 
-      {/* BIM teaser — links to dedicated page */}
+      {/* BIM teaser strip */}
       <section className="bg-brand-dark py-16" data-testid="servicos-bim-teaser">
         <div className="container mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
@@ -73,15 +70,11 @@ export default function ServicosPage() {
             </h2>
             <p className="mt-3 text-white/65 text-[15px] max-w-xl leading-relaxed">
               {t.nav.about === "About us"
-                ? "Specialised BIM modelling, coordination and Clash Detection services. Discover how we transform data into useful knowledge."
+                ? "Specialised BIM modelling, coordination and Clash Detection. Discover how we transform data into useful knowledge."
                 : "Serviços especializados de modelação BIM, coordenação e Clash Detection. Descubra como transformamos dados em conhecimento útil."}
             </p>
           </div>
-          <Link
-            href="/bim"
-            className="btn-gold shrink-0"
-            data-testid="servicos-bim-link"
-          >
+          <Link href="/bim" className="btn-gold shrink-0" data-testid="servicos-bim-link">
             {t.nav.about === "About us" ? "Discover BIM" : "Descobrir BIM"} <ArrowRight size={16} />
           </Link>
         </div>
@@ -90,11 +83,11 @@ export default function ServicosPage() {
   );
 }
 
-function ServiceTile({ service, image, index, tall, className = "" }) {
+function ServiceTile({ service, image, index, className = "" }) {
   return (
     <article
       className={`relative overflow-hidden group ${className}`}
-      style={{ minHeight: tall ? "540px" : "420px" }}
+      style={{ minHeight: "540px" }}
       data-testid={`servicos-tile-${index}`}
     >
       <Image

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/components/LanguageProvider";
 import { IMAGES } from "@/lib/images";
@@ -16,171 +16,169 @@ export default function BimPage() {
       <PageHero
         title={b.heroTitle}
         subtitle={b.heroSubtitle}
-        image={IMAGES.siteWide1}
+        image={IMAGES.heroes.bim}
         objectPosition="center 50%"
         testId="bim-hero"
       />
 
-      {/* ── INTRO ─────────────────────────────────────────────────────────── */}
-      <section className="bg-white py-24 md:py-32" data-testid="bim-intro">
-        <div className="container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <span className="eyebrow">{b.eyebrow}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark leading-[0.93]">
-              {b.title}
-            </h2>
-            <p className="mt-7 text-brand-dark/70 text-[15px] leading-relaxed">{b.intro}</p>
-            <p className="mt-5 text-brand-dark/70 text-[15px] leading-relaxed">{b.why}</p>
-            <Link href="/orcamento" className="mt-10 btn-gold">
-              {t.cta.contact} <ArrowRight size={16} />
-            </Link>
-          </div>
-
-          {/* Staggered image pair */}
-          <div className="grid grid-cols-2 gap-5">
-            <div className="relative overflow-hidden" style={{ height: "500px" }}>
-              <Image
-                src={IMAGES.justiceP1}
-                alt="BIM — modelo digital"
-                fill
-                className="object-cover"
-                sizes="(max-width:1024px) 50vw, 25vw"
-              />
-            </div>
-            <div className="relative overflow-hidden mt-14" style={{ height: "500px" }}>
-              <Image
-                src={IMAGES.siteWide5}
-                alt="BIM — coordenação"
-                fill
-                className="object-cover"
-                sizes="(max-width:1024px) 50vw, 25vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 4 SERVICE CARDS ───────────────────────────────────────────────── */}
-      <section className="bg-brand-light py-24 md:py-32" data-testid="bim-services">
+      {/* ── INTRO — text left, tall image bleeds to the right edge ───────── */}
+      <section className="bg-white overflow-hidden" data-testid="bim-intro">
         <div className="container mx-auto px-6 lg:px-10">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {b.services.map((s, i) => (
-              <div
-                key={i}
-                className="bg-white border border-brand-gray p-8 hover:border-brand-gold transition-colors duration-300"
-                data-testid={`bim-service-${i}`}
-              >
-                <div className="w-10 h-10 bg-brand-gold flex items-center justify-center mb-5">
-                  <span className="font-title text-brand-dark text-lg">{String(i + 1).padStart(2, "0")}</span>
-                </div>
-                <h3 className="font-title uppercase text-2xl text-brand-dark tracking-wide">{s.title}</h3>
-                <p className="text-brand-dark/65 text-sm leading-relaxed mt-4">{s.desc}</p>
-              </div>
-            ))}
+          <div className="grid lg:grid-cols-[1fr_45%] gap-0 items-stretch">
+
+            {/* Text column — padded normally */}
+            <div className="py-24 md:py-32 pr-0 lg:pr-16">
+              <span className="eyebrow">{b.eyebrow}</span>
+              <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark leading-[0.9]">
+                {b.title}
+              </h2>
+              <p className="mt-8 text-brand-dark/70 text-[15px] leading-relaxed">{b.intro}</p>
+              <p className="mt-5 text-brand-dark/70 text-[15px] leading-relaxed">{b.why}</p>
+              <Link href="/orcamento" className="mt-10 btn-gold">
+                {t.cta.contact} <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Image column — no padding, stretches full section height */}
+            <div className="relative hidden lg:block" style={{ minHeight: "640px" }}>
+              <Image
+                src={IMAGES.bim.intro}
+                alt="Ministério da Justiça — BIM"
+                fill
+                className="object-cover object-top"
+                sizes="45vw"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* ── DETAIL SECTIONS ───────────────────────────────────────────────── */}
-      <section className="bg-brand-dark text-white py-24 md:py-32 grain" data-testid="bim-detail">
+      {/* ── MODELS + COORDINATION — 3-col: image | divider | two paras ───── */}
+      <section className="bg-brand-dark text-white py-24 md:py-32 grain" data-testid="bim-models">
         <div className="container mx-auto px-6 lg:px-10">
+          <div className="grid lg:grid-cols-[45%_1px_1fr] gap-0 lg:gap-10 items-start">
 
-          {/* Models + image */}
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative overflow-hidden" style={{ height: "480px" }}>
+            {/* Image */}
+            <div className="relative overflow-hidden mb-10 lg:mb-0" style={{ height: "520px" }}>
               <Image
-                src={IMAGES.siteWide4}
-                alt="Modelos BIM"
+                src={IMAGES.bim.models}
+                alt="Modelação BIM"
                 fill
                 className="object-cover"
-                sizes="(max-width:1024px) 100vw, 50vw"
+                sizes="(max-width:1024px) 100vw, 45vw"
               />
             </div>
-            <div>
-              <h3 className="font-title uppercase text-3xl md:text-4xl text-brand-gold leading-tight">
-                {b.services[0].title}
-              </h3>
-              <p className="mt-6 text-white/75 text-[15px] leading-relaxed">{b.models}</p>
-              <p className="mt-5 text-white/75 text-[15px] leading-relaxed">{b.coordination}</p>
-            </div>
-          </div>
 
-          <div className="border-t border-white/10 mt-16 pt-16 grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="font-title uppercase text-3xl md:text-4xl text-brand-gold leading-tight">
-                {b.services[1].title}
-              </h3>
-              <p className="mt-6 text-white/75 text-[15px] leading-relaxed">{b.clash}</p>
-              <p className="mt-5 text-white/75 text-[15px] leading-relaxed">{b.openBim}</p>
-            </div>
-            <div className="relative overflow-hidden" style={{ height: "480px" }}>
-              <Image
-                src={IMAGES.siteWide3}
-                alt="Clash Detection"
-                fill
-                className="object-cover"
-                sizes="(max-width:1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
+            {/* Vertical divider — desktop only */}
+            <div className="hidden lg:block w-px bg-white/10 self-stretch" />
 
-          <div className="border-t border-white/10 mt-16 pt-16 grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative overflow-hidden" style={{ height: "480px" }}>
-              <Image
-                src={IMAGES.siteWide6}
-                alt="4D 5D BIM"
-                fill
-                className="object-cover"
-                sizes="(max-width:1024px) 100vw, 50vw"
-              />
-            </div>
-            <div>
-              <h3 className="font-title uppercase text-3xl md:text-4xl text-brand-gold leading-tight">
-                {b.services[3].title}
-              </h3>
-              <p className="mt-6 text-white/75 text-[15px] leading-relaxed">{b.dimensions}</p>
+            {/* Two paragraphs stacked */}
+            <div className="space-y-10 lg:pl-4">
+              <div>
+                <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-4">
+                  {t.nav.about === "About us" ? "3D Models" : "Modelos 3D"}
+                </p>
+                <p className="text-white/85 text-[15px] leading-relaxed">{b.models}</p>
+              </div>
+              <div className="border-t border-white/10 pt-10">
+                <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-4">
+                  {t.nav.about === "About us" ? "Coordination" : "Coordenação"}
+                </p>
+                <p className="text-white/85 text-[15px] leading-relaxed">{b.coordination}</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── TEAM + CLOSING ────────────────────────────────────────────────── */}
-      <section className="bg-brand-light py-24 md:py-32" data-testid="bim-team">
-        <div className="container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <span className="eyebrow">PRUMO SOALHEIRO</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark leading-[0.93]">
-              {t.nav.about === "About us" ? "Our team" : "A nossa equipa"}
-            </h2>
-            <p className="mt-7 text-brand-dark/70 text-[15px] leading-relaxed">{b.team}</p>
-            <p className="mt-5 text-brand-dark/70 text-[15px] leading-relaxed">{b.closing}</p>
+      {/* ── CLASH + OPENBIM — light bg, text bleeds left, image right ─────── */}
+      <section className="bg-brand-light overflow-hidden" data-testid="bim-clash">
+        <div className="container mx-auto px-6 lg:px-10">
+          <div className="grid lg:grid-cols-[1fr_45%] gap-0 items-stretch">
 
-            <ul className="mt-8 space-y-3">
-              {b.services.map((s, i) => (
-                <li key={i} className="flex items-start gap-3 text-brand-dark/75 text-[15px]">
-                  <CheckCircle size={18} className="text-brand-gold shrink-0 mt-0.5" />
-                  <span><strong className="font-bold text-brand-dark">{s.title}</strong> — {s.desc}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Link href="/orcamento" className="mt-10 btn-gold">
-              {t.cta.contact} <ArrowRight size={16} />
-            </Link>
-          </div>
-
-          {/* Image trio */}
-          <div className="space-y-5">
-            <div className="relative overflow-hidden" style={{ height: "280px" }}>
-              <Image src={IMAGES.siteWide2} alt="" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+            {/* Text */}
+            <div className="py-24 md:py-32 pr-0 lg:pr-16 space-y-10">
+              <div>
+                <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-4">
+                  Clash Detection
+                </p>
+                <p className="text-brand-dark/75 text-[15px] leading-relaxed">{b.clash}</p>
+              </div>
+              <div className="border-t border-brand-gray pt-10">
+                <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-4">
+                  OpenBIM
+                </p>
+                <p className="text-brand-dark/75 text-[15px] leading-relaxed">{b.openBim}</p>
+              </div>
             </div>
-            <div className="grid grid-cols-2 gap-5">
-              <div className="relative overflow-hidden" style={{ height: "220px" }}>
-                <Image src={IMAGES.siteTall1} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
+
+            {/* Image — full height, no padding */}
+            <div className="relative hidden lg:block" style={{ minHeight: "560px" }}>
+              <Image
+                src={IMAGES.sumol.hero}
+                alt="Clash Detection — coordenação"
+                fill
+                className="object-cover"
+                sizes="45vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 4D/5D — cinematic full-bleed band with text over image ────────── */}
+      <section className="relative overflow-hidden" style={{ minHeight: "520px" }} data-testid="bim-4d5d">
+        <Image
+          src={IMAGES.etar.hero}
+          alt="Planeamento 4D/5D"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        {/* Left-to-right gradient so text is readable on left */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[rgba(16,11,0,0.92)] via-[rgba(16,11,0,0.65)] to-transparent" />
+        <div className="relative z-10 container mx-auto px-6 lg:px-10 flex items-center py-24" style={{ minHeight: "520px" }}>
+          <div className="max-w-lg">
+            <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-6">
+              4D / 5D
+            </p>
+            <p className="text-white/90 text-[16px] leading-relaxed">{b.dimensions}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── TEAM + CLOSING — dark, image spans full height on right ──────── */}
+      <section className="bg-brand-dark text-white overflow-hidden" data-testid="bim-team">
+        <div className="container mx-auto px-6 lg:px-10">
+          <div className="grid lg:grid-cols-[1fr_40%] gap-0 items-stretch">
+
+            {/* Text */}
+            <div className="py-24 md:py-32 pr-0 lg:pr-16 space-y-8">
+              <div>
+                <p className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase mb-6">
+                  PRUMO SOALHEIRO
+                </p>
+                <p className="text-white/85 text-[15px] leading-relaxed">{b.team}</p>
               </div>
-              <div className="relative overflow-hidden" style={{ height: "220px" }}>
-                <Image src={IMAGES.siteTall2} alt="" fill className="object-cover" sizes="(max-width:1024px) 50vw, 25vw" />
+              <div className="border-t border-white/10 pt-8">
+                {/* Closing statement gets larger treatment */}
+                <p className="text-white/70 text-[17px] leading-relaxed italic">{b.closing}</p>
               </div>
+              <Link href="/orcamento" className="btn-gold mt-4">
+                {t.cta.contact} <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            {/* Image 5 — portrait, full height */}
+            <div className="relative hidden lg:block">
+              <Image
+                src={IMAGES.justice.gallery[0]}
+                alt="PRUMO — BIM em obra"
+                fill
+                className="object-cover"
+                sizes="40vw"
+              />
             </div>
           </div>
         </div>
@@ -191,7 +189,9 @@ export default function BimPage() {
         <div className="container mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-10">
           <div>
             <h2 className="font-title uppercase text-4xl md:text-5xl text-brand-dark leading-tight">
-              {t.nav.about === "About us" ? "Digitalise your next project" : "Digitalize o seu próximo projeto"}
+              {t.nav.about === "About us"
+                ? "Digitalise your next project"
+                : "Digitalize o seu próximo projeto"}
             </h2>
             <p className="mt-3 text-brand-dark/70 text-base">
               {t.nav.about === "About us"

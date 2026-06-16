@@ -139,12 +139,6 @@ export const translations = {
       dimensions: "Os modelos desenvolvidos podem ainda servir de suporte à extração automática de quantidades, planeamento da construção (4D), estimativa e controlo de custos (5D), gestão documental e operação futura dos ativos construídos.",
       team: "A nossa equipa possui formação avançada e experiência prática em BIM, engenharia, projeto e construção, permitindo estabelecer uma ligação efetiva entre o ambiente digital e a realidade da obra. Esta combinação de competências constitui um dos principais fatores diferenciadores da PRUMO SOALHEIRO.",
       closing: "Mais do que produzir modelos tridimensionais, procuramos transformar dados em conhecimento útil, apoiando os nossos clientes na conceção, execução e gestão de empreendimentos mais eficientes, sustentáveis e preparados para os desafios futuros.",
-      services: [
-        { title: "Modelação BIM", desc: "Modelação BIM de Arquitetura, Estruturas e Especialidades, integrando as diferentes disciplinas num ambiente colaborativo." },
-        { title: "Clash Detection", desc: "Deteção e análise de interferências multidisciplinares, identificando conflitos antes da sua materialização em obra." },
-        { title: "OpenBIM", desc: "Plataformas colaborativas e metodologias OpenBIM para partilha estruturada da informação entre todos os intervenientes." },
-        { title: "4D / 5D", desc: "Extração de quantidades, planeamento da construção (4D), estimativa e controlo de custos (5D) integrados no modelo." },
-      ],
     },
     projects: {
       heroTitle: "Projetos",
@@ -414,12 +408,6 @@ export const translations = {
       dimensions: "The models can also support automated quantity take-off, 4D construction planning, 5D cost estimation and control, document management and future asset operation.",
       team: "Our team has advanced BIM training and hands-on experience in engineering, design and construction, enabling an effective link between the digital environment and site reality. This combination of skills is one of PRUMO SOALHEIRO's key differentiators.",
       closing: "More than producing 3D models, we seek to transform data into useful knowledge, supporting our clients in the design, execution and management of more efficient, sustainable and future-ready projects.",
-      services: [
-        { title: "BIM Modelling", desc: "BIM modelling for Architecture, Structures and MEP, integrating all disciplines in a collaborative environment." },
-        { title: "Clash Detection", desc: "Multidisciplinary interference detection and analysis, identifying conflicts before they appear on site." },
-        { title: "OpenBIM", desc: "Collaborative platforms and OpenBIM methodologies for structured information sharing between all stakeholders." },
-        { title: "4D / 5D", desc: "Quantity take-off, 4D construction planning and 5D cost estimation and control integrated into the model." },
-      ],
     },
     projects: {
       heroTitle: "Projects",

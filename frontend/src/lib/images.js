@@ -1,87 +1,157 @@
-// PRUMO Soalheiro — local assets from /public/assets/
-// Dimensions and orientation noted for correct layout usage.
-// Portrait (tall) = ratio < 1, Landscape = ratio > 1
-const A = (name) => `/assets/${name}`;
+// =============================================================================
+//  PRUMO SOALHEIRO — Image configuration
+//  ─────────────────────────────────────────────────────────────────────────────
+//  All site images are organised in /public/images/<section>/.
+//  To replace any image, drop the new file in the right folder and update
+//  the path string below. The folder structure mirrors the site sections:
+//
+//  public/images/
+//  ├── heroes/                   ← Full-page banner behind each page title
+//  │   ├── home.jpg              ← Home page hero (2048×1536, widest shot)
+//  │   ├── about.jpg             ← About page hero
+//  │   ├── services.jpg          ← Services page hero (wide panoramic)
+//  │   ├── projects.jpg          ← Projects page hero
+//  │   ├── quote.jpg             ← Quote/orçamento page hero
+//  │   ├── contact.jpg           ← Contact page hero
+//  │   └── bim.jpg               ← BIM page hero
+//  │
+//  ├── projects/
+//  │   ├── ministry-of-justice/  ← All photos from this project
+//  │   │   ├── hero.jpg          ← Main full-bleed image (portrait, 1080×1920)
+//  │   │   ├── facade-wide.jpg   ← Wide facade landscape
+//  │   │   ├── roof.jpg          ← Roof detail
+//  │   │   ├── facade-01.jpg     ← Gallery photos (portrait, 899×1599)
+//  │   │   ├── facade-02.jpg
+//  │   │   ├── facade-03.jpg
+//  │   │   ├── facade-04.jpg
+//  │   │   ├── facade-05.jpg
+//  │   │   ├── facade-06.jpg
+//  │   │   └── facade-07.jpg
+//  │   │
+//  │   ├── sumol-compal/         ← All photos from this project
+//  │   │   ├── hero.jpg          ← Main image (1501×944)
+//  │   │   ├── facade-01.jpg
+//  │   │   ├── facade-02.jpg
+//  │   │   └── facade-03.jpg
+//  │   │
+//  │   └── etar-guia/            ← Replace with real ETAR photos when available
+//  │       ├── hero.jpg
+//  │       ├── site-01.jpg
+//  │       ├── site-02.jpg
+//  │       ├── site-03.jpg
+//  │       ├── site-04.jpg
+//  │       └── site-05.jpg
+//  │
+//  ├── services/                 ← One image per service area
+//  │   ├── design.jpg            ← Projeto / Design service tile
+//  │   ├── construction.jpg      ← Construção / Construction service tile
+//  │   ├── management.jpg        ← Gestão / Management service tile
+//  │   ├── research.jpg          ← Investigação & Inovação service tile
+//  │   └── training.jpg          ← Formação / Training service tile
+//  │
+//  ├── about/                    ← About page section images
+//  │   ├── main.jpg              ← Large primary image (left column)
+//  │   ├── secondary.jpg         ← Bottom-left supplementary
+//  │   ├── portrait.jpg          ← Bottom-right supplementary (portrait)
+//  │   └── numbers-bg.jpg        ← Background behind stats section
+//  │
+//  ├── bim/                      ← BIM page — one image per section (swap freely)
+//  │   ├── intro.jpg             ← Intro: tall portrait, bleeds right edge (1080×1920)
+//  │   ├── models.jpg            ← Models & Coordination section (landscape)
+//  │   ├── clash.jpg             ← Clash Detection & OpenBIM section (1501×944)
+//  │   ├── 4d5d.jpg              ← 4D/5D cinematic full-bleed band (1600×1200)
+//  │   └── team.jpg              ← Team & Closing section portrait (899×1599)
+//  │
+//  └── team/
+//      └── portrait.png          ← Team portrait (tall, 1170×2532)
+// =============================================================================
+
+const I = (path) => `/images/${path}`;
 
 export const IMAGES = {
-  // ─── HERO BANNERS (each page gets a different one) ──────────────────────────
-  // Home: large 2048×1536 landscape — widest, most impactful
-  heroHome: A("8d66074c-b0e0-4cce-b5a9-aa771f7146b5.JPG"),
-  // About: wide Sumol/construction shot 1501×944
-  heroAbout: A("b20d9e16-1e5b-48aa-94da-e03de280653e.JPG"),
-  // Services: wide panoramic 1355×616
-  heroServices: A("cf6fd65d-a7fc-41ba-8406-e6aff1625816.JPG"),
-  // Projects: 1600×1200 on-site landscape
-  heroProjects: A("ea087090-b39a-4475-87a7-1083805cc211.JPG"),
-  // Quote/Contact: wide 1599×899
-  heroQuote: A("e564e882-cb6c-41ef-8f5e-a49f22627b75.JPG"),
 
-  // ─── MINISTRY OF JUSTICE (portrait + landscape shots) ───────────────────────
-  // Tall portraits of the building facade (ratio 0.56 — 899×1599)
-  justiceP1: A("62c65191-93bb-40f9-ab69-d1e2e7fd2d80.JPG"),
-  justiceP2: A("62c65191-93bb-40f9-ab69-d1e2e7fd2d80 (1).JPG"),
-  justiceP3: A("dbc99f2d-8a68-43d5-939d-a5cd4d222548.JPG"),
-  justiceP4: A("0ba21580-d003-4817-b39c-8c4b0e23d136.JPG"),
-  justiceP5: A("76480e60-bad2-4378-b960-2e52c059a94e.JPG"),
-  justiceP6: A("0ae6456f-969c-48db-b559-9d3c220d812c.JPG"),
-  justiceP7: A("6985b073-2f69-4eb4-965c-312fd64cefbb.JPG"),
-  // Landscape wide shots of the building (1080×1920 & 1599×899)
-  justiceL1: A("8e0ffd58-ad0e-4ba3-b7d4-be68c8ca5379.JPG"),
-  justiceL2: A("8e0ffd58-ad0e-4ba3-b7d4-be68c8ca5379 (1).JPG"),
-  justiceL3: A("e78fa72f-ab46-4445-a78a-497398e54565.JPG"),
+  // ── HERO BANNERS ────────────────────────────────────────────────────────────
+  heroes: {
+    home:     I("heroes/home.jpg"),
+    about:    I("heroes/about.jpg"),
+    services: I("heroes/services.jpg"),
+    projects: I("heroes/projects.jpg"),
+    quote:    I("heroes/quote.jpg"),
+    contact:  I("heroes/contact.jpg"),
+    bim:      I("heroes/bim.jpg"),
+  },
 
-  // ─── SUMOL + COMPAL (1501×944 wide landscape shots) ─────────────────────────
-  sumol1: A("7f4bd34f-b7ba-477d-89d9-eb8a9b3cb32f.JPG"),
-  sumol2: A("f3810e17-fad0-4669-8516-e1dd7171917f.JPG"),
-  sumol3: A("b20d9e16-1e5b-48aa-94da-e03de280653e.JPG"),
-  sumol4: A("ef2beb0e-c8a5-4a13-88b8-6dfdb5b46eb7.JPG"),
+  // ── MINISTRY OF JUSTICE ─────────────────────────────────────────────────────
+  // Building facades and roof — rehabilitation project in historic Lisbon
+  justice: {
+    hero:       I("projects/ministry-of-justice/hero.jpg"),
+    facadeWide: I("projects/ministry-of-justice/facade-wide.jpg"),
+    roof:       I("projects/ministry-of-justice/roof.jpg"),
+    gallery: [
+      I("projects/ministry-of-justice/facade-01.jpg"),
+      I("projects/ministry-of-justice/facade-02.jpg"),
+      I("projects/ministry-of-justice/facade-03.jpg"),
+      I("projects/ministry-of-justice/facade-04.jpg"),
+      I("projects/ministry-of-justice/facade-05.jpg"),
+      I("projects/ministry-of-justice/facade-06.jpg"),
+      I("projects/ministry-of-justice/facade-07.jpg"),
+    ],
+  },
 
-  // ─── GENERAL CONSTRUCTION SITE — wide landscape (1600×1200) ────────────────
-  siteWide1: A("1dd7395d-05f4-4f23-ade3-32b73a50a6a9.JPG"),
-  siteWide2: A("ea087090-b39a-4475-87a7-1083805cc211.JPG"),
-  siteWide3: A("46d6b4bd-241d-4903-b4b2-3b77f23b80fe.JPG"),
-  siteWide4: A("1649ae61-c101-4af1-a306-d1663b766f67.JPG"),
-  siteWide5: A("3759113e-f70b-465e-9317-b05a39f8c22c.JPG"),
-  siteWide6: A("4eb83d2a-61a7-4ca3-b34d-2e4a5e33d3e3.JPG"),
-  siteWide7: A("fe6b8c3d-9979-4179-ad16-53058f2a6ee1.JPG"),
-  siteWide8: A("5d2728d1-8183-4438-a763-fed12e18ef77.JPG"),
+  // ── SUMOL + COMPAL ──────────────────────────────────────────────────────────
+  // Corporate building facade intervention in Carnaxide
+  sumol: {
+    hero:    I("projects/sumol-compal/hero.jpg"),
+    gallery: [
+      I("projects/sumol-compal/facade-01.jpg"),
+      I("projects/sumol-compal/facade-02.jpg"),
+      I("projects/sumol-compal/facade-03.jpg"),
+    ],
+  },
 
-  // ─── GENERAL CONSTRUCTION SITE — portrait/square (0.56–0.75 ratio) ─────────
-  siteTall1: A("53a5cfb8-d477-44d3-8cb7-d8f89ec5b076.JPG"),   // 1200×1600
-  siteTall2: A("c17ce023-81db-4010-941b-bbefef150f8b.JPG"),   // 1200×1600
+  // ── ETAR DA GUIA ────────────────────────────────────────────────────────────
+  // Hydraulic infrastructure — replace with real ETAR photos when available
+  etar: {
+    hero:    I("projects/etar-guia/hero.jpg"),
+    gallery: [
+      I("projects/etar-guia/site-01.jpg"),
+      I("projects/etar-guia/site-02.jpg"),
+      I("projects/etar-guia/site-03.jpg"),
+      I("projects/etar-guia/site-04.jpg"),
+      I("projects/etar-guia/site-05.jpg"),
+    ],
+  },
 
-  // ─── TEAM / PEOPLE ──────────────────────────────────────────────────────────
-  team: A("IMG_7372.PNG"),  // 1170×2532 tall portrait
+  // ── SERVICE TILES ───────────────────────────────────────────────────────────
+  // One image per service area — used on /servicos and home services section
+  services: {
+    design:       I("services/design.jpg"),
+    construction: I("services/construction.jpg"),
+    management:   I("services/management.jpg"),
+    research:     I("services/research.jpg"),
+    training:     I("services/training.jpg"),
+  },
 
-  // ─── PAGE-LEVEL SEMANTIC ALIASES ────────────────────────────────────────────
+  // ── ABOUT PAGE ──────────────────────────────────────────────────────────────
+  about: {
+    main:       I("about/main.jpg"),
+    secondary:  I("about/secondary.jpg"),
+    portrait:   I("about/portrait.jpg"),
+    numbersBg:  I("about/numbers-bg.jpg"),
+  },
 
-  // Home institutional section — tall portraits for staggered grid
-  homeGrid1: A("62c65191-93bb-40f9-ab69-d1e2e7fd2d80.JPG"),   // Justice facade portrait
-  homeGrid2: A("53a5cfb8-d477-44d3-8cb7-d8f89ec5b076.JPG"),   // site portrait
+  // ── BIM PAGE ────────────────────────────────────────────────────────────────
+  // One image per section — drop a new file in public/images/bim/ and update the path
+  bim: {
+    intro:  I("bim/intro.jpg"),   // Intro section: tall portrait, bleeds right (1080×1920)
+    models: I("bim/models.jpg"),  // Models & Coordination section (landscape)
+    clash:  I("bim/clash.jpg"),   // Clash Detection & OpenBIM section (1501×944)
+    band:   I("bim/4d5d.jpg"),    // 4D/5D cinematic full-bleed band (1600×1200)
+    team:   I("bim/team.jpg"),    // Team & Closing section portrait (899×1599)
+  },
 
-  // Service tiles — each area gets a contextually relevant image
-  // 1. Design / BIM — wide technical site shot
-  service1: A("1dd7395d-05f4-4f23-ade3-32b73a50a6a9.JPG"),
-  // 2. Construction — scaffolding/facade wide
-  service2: A("46d6b4bd-241d-4903-b4b2-3b77f23b80fe.JPG"),
-  // 3. Management — wide coordinated site
-  service3: A("4eb83d2a-61a7-4ca3-b34d-2e4a5e33d3e3.JPG"),
-  // 4. Research & Innovation — modern wide shot
-  service4: A("3759113e-f70b-465e-9317-b05a39f8c22c.JPG"),
-  // 5. Training — team/people context
-  service5: A("fe6b8c3d-9979-4179-ad16-53058f2a6ee1.JPG"),
-
-  // Project thumbnails for home portfolio section
-  project1: A("8e0ffd58-ad0e-4ba3-b7d4-be68c8ca5379.JPG"),    // Justice landscape
-  project2: A("7f4bd34f-b7ba-477d-89d9-eb8a9b3cb32f.JPG"),    // Sumol wide
-  project3: A("1649ae61-c101-4af1-a306-d1663b766f67.JPG"),    // Infrastructure/ETAR
-  project4: A("5d2728d1-8183-4438-a763-fed12e18ef77.JPG"),    // BIM/coordination
-
-  // About page imagery
-  about1: A("1dd7395d-05f4-4f23-ade3-32b73a50a6a9.JPG"),
-  about2: A("ea087090-b39a-4475-87a7-1083805cc211.JPG"),
-  about3: A("53a5cfb8-d477-44d3-8cb7-d8f89ec5b076.JPG"),
-
-  // Differential / "why us" section — scaffold/facade work
-  differential: A("46d6b4bd-241d-4903-b4b2-3b77f23b80fe.JPG"),
+  // ── TEAM ────────────────────────────────────────────────────────────────────
+  team: {
+    portrait: I("team/portrait.png"),
+  },
 };

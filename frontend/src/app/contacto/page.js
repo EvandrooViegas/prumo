@@ -133,7 +133,7 @@ export default function ContactoPage() {
       <PageHero
         title={t.contact.heroTitle.toUpperCase()}
         subtitle={t.contact.heroSubtitle}
-        image={IMAGES.siteWide7}
+        image={IMAGES.heroes.contact}
         objectPosition="center 45%"
         testId="contacto-hero"
       />

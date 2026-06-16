@@ -40,7 +40,7 @@ export default function OrcamentoPage() {
       <PageHero
         title={t.quote.heroTitle.toUpperCase()}
         subtitle={t.quote.heroSubtitle}
-        image={IMAGES.heroQuote}
+        image={IMAGES.heroes.quote}
         objectPosition="center 50%"
         testId="orcamento-hero"
       />
@@ -66,7 +66,7 @@ export default function OrcamentoPage() {
               data-testid="orcamento-image"
             >
               <Image
-                src={IMAGES.surveyorPortrait}
+                src={IMAGES.sumol.gallery[1]}
                 alt="Surveyor"
                 fill
                 className="object-cover"
