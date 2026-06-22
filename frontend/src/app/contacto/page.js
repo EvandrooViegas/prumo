@@ -150,7 +150,7 @@ export default function ContactoPage() {
                 {t.contact.eyebrow}
               </span>
               <h2
-                className="font-title uppercase text-5xl md:text-6xl mt-5 leading-[0.95] text-brand-dark"
+                className="font-title uppercase text-4xl md:text-5xl mt-5 leading-[0.95] text-brand-dark"
                 data-testid="contacto-title"
               >
                 {t.contact.title}

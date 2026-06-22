@@ -3,9 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import dynamic from "next/dynamic";
 import PageHero from "@/components/PageHero";
 import { useLanguage } from "@/components/LanguageProvider";
 import { IMAGES } from "@/lib/images";
+
+// Load flipbook only on client — pdf.js uses browser APIs
+const PdfFlipbook = dynamic(() => import("@/components/PdfFlipbook"), { ssr: false });
 
 export default function ProjetosPage() {
   const { t } = useLanguage();
@@ -46,7 +50,7 @@ export default function ProjetosPage() {
         dark
       />
 
-      {/* ── PROJECT 3: ETAR DA GUIA ────────────────────────────────────────── */}
+      {/* ── PROJECT 3: INTERVENÇÃO EM AMBIENTE INDUSTRIAL ─────────────────── */}
       <ProjectSection
         project={t.projects.list[2]}
         hero={IMAGES.etar.hero}
@@ -57,6 +61,26 @@ export default function ProjetosPage() {
         isEn={isEn}
         dark={false}
       />
+
+      {/* ── COMPANY BOOK ──────────────────────────────────────────────────── */}
+      <section className="bg-brand-light py-24 md:py-32" data-testid="projetos-book">
+        <div className="container mx-auto px-6 lg:px-10">
+          <div className="text-center mb-14">
+            <span className="eyebrow">
+              {isEn ? "Company Presentation" : "Apresentação da Empresa"}
+            </span>
+            <h2 className="font-title uppercase text-4xl md:text-5xl mt-5 text-brand-dark leading-tight">
+              {isEn ? "Know us better" : "Conheça-nos melhor"}
+            </h2>
+            <p className="mt-5 text-brand-dark/60 text-[15px] max-w-xl mx-auto leading-relaxed">
+              {isEn
+                ? "Browse our company presentation. Pages turn automatically — or take control yourself."
+                : "Folheie a nossa apresentação institucional. As páginas viram automaticamente — ou navegue ao seu ritmo."}
+            </p>
+          </div>
+          <PdfFlipbook src="/book.pdf" autoFlipInterval={4000} />
+        </div>
+      </section>
 
       {/* ── CTA ───────────────────────────────────────────────────────────── */}
       <section className="bg-brand-gold py-16">
@@ -98,7 +122,7 @@ function ProjectSection({ project, hero, side1, side2, gallery, tag, isEn, featu
           <Image src={hero} alt={project.title} fill className="object-cover" sizes="100vw" priority={featured} />
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(16,11,0,0.82)] via-[rgba(16,11,0,0.2)] to-transparent" />
           <div className="absolute inset-x-0 bottom-0 p-10 md:p-14">
-            <h2 className="font-title uppercase text-white leading-tight" style={{ fontSize: "clamp(2.5rem, 6vw, 5.5rem)" }}>
+            <h2 className="font-title uppercase text-white leading-tight" style={{ fontSize: "clamp(2rem, 4.5vw, 4rem)" }}>
               {project.title}
             </h2>
             <p className="text-brand-gold font-bold tracking-wider uppercase text-sm mt-3">

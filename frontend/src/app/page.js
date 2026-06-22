@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 lg:px-10 pt-40 pb-24">
           <p className="text-brand-gold text-xs font-bold tracking-[0.35em] uppercase mb-5 animate-fade-up">PRUMO SOALHEIRO</p>
-          <h1 className="font-title text-white uppercase leading-[0.88] max-w-5xl animate-fade-up" style={{ fontSize: "clamp(3.5rem, 9vw, 8rem)", animationDelay: "80ms" }} data-testid="home-hero-title">
+          <h1 className="font-title text-white uppercase leading-[1.1] max-w-5xl animate-fade-up" style={{ fontSize: "clamp(3rem, 7.5vw, 6.5rem)", animationDelay: "80ms" }} data-testid="home-hero-title">
             {t.slogan.main.split("\n").map((line, i) => (
               <span key={i} className="block">
                 {line.split(/\b(PROJETAR|CONSTRUIR|DESIGN|BUILD)\b/).map((part, j) =>
@@ -63,7 +63,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="eyebrow">PRUMO SOALHEIRO</span>
-              <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark leading-[0.93]">
+              <h2 className="font-title uppercase text-4xl md:text-5xl mt-5 text-brand-dark leading-[0.93]">
                 {t.nav.about === "About us" ? "Who we are" : "Quem somos"}
               </h2>
               <div className="mt-7 space-y-5 text-brand-dark/70 text-[15px] leading-relaxed max-w-lg">
@@ -92,7 +92,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
             <div>
               <span className="eyebrow">{t.home.eyebrowServices}</span>
-              <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark">{t.home.titleServices}</h2>
+              <h2 className="font-title uppercase text-4xl md:text-5xl mt-5 text-brand-dark">{t.home.titleServices}</h2>
             </div>
             <Link href="/servicos" className="inline-flex items-center gap-2 text-brand-dark text-xs font-bold tracking-[0.18em] uppercase border-b-2 border-brand-dark pb-1 hover:text-brand-goldDark hover:border-brand-goldDark transition-colors shrink-0 mb-2">
               {t.nav.about === "About us" ? "All services" : "Todos os serviços"} <ArrowRight size={14} />
@@ -140,7 +140,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
             <div>
               <span className="eyebrow-dark">{t.home.eyebrowPortfolio}</span>
-              <h2 className="font-title uppercase text-5xl md:text-6xl mt-5">{t.home.titlePortfolio}</h2>
+              <h2 className="font-title uppercase text-4xl md:text-5xl mt-5">{t.home.titlePortfolio}</h2>
               <p className="mt-5 max-w-xl text-white/70 text-[15px] leading-relaxed">{t.home.portfolioIntro}</p>
             </div>
             <Link href="/projetos" className="inline-flex items-center gap-2 text-white text-xs font-bold tracking-[0.18em] uppercase border-b-2 border-brand-gold pb-1 hover:text-brand-gold transition-colors shrink-0 mb-2">
@@ -187,7 +187,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14">
           <div>
             <span className="eyebrow">{t.home.eyebrowDifferential}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl leading-[0.93] mt-5 text-brand-dark">{t.home.titleDifferential}</h2>
+            <h2 className="font-title uppercase text-4xl md:text-5xl leading-[0.93] mt-5 text-brand-dark">{t.home.titleDifferential}</h2>
             <p className="mt-6 max-w-md text-brand-dark/70 text-[15px] leading-relaxed">{t.home.differentialIntro}</p>
             {/* Facade/scaffolding work — matches Construction differential */}
             <div className="mt-10 relative overflow-hidden" style={{ height: "400px" }}>
@@ -216,7 +216,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 lg:px-10 relative z-10">
           <div className="text-center mb-14">
             <span className="eyebrow-dark">{t.home.eyebrowQuotes}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5">{t.home.titleQuotes}</h2>
+            <h2 className="font-title uppercase text-4xl md:text-5xl mt-5">{t.home.titleQuotes}</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
             {t.quotes.slice(0, 4).map((q, i) => (

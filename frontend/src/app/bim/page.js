@@ -29,7 +29,7 @@ export default function BimPage() {
             {/* Text column — padded normally */}
             <div className="py-24 md:py-32 pr-0 lg:pr-16">
               <span className="eyebrow">{b.eyebrow}</span>
-              <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark leading-[0.9]">
+              <h2 className="font-title uppercase text-4xl md:text-5xl mt-5 text-brand-dark leading-[0.9]">
                 {b.title}
               </h2>
               <p className="mt-8 text-brand-dark/70 text-[15px] leading-relaxed">{b.intro}</p>
@@ -116,7 +116,7 @@ export default function BimPage() {
             {/* Image — full height, no padding */}
             <div className="relative hidden lg:block" style={{ minHeight: "560px" }}>
               <Image
-                src={IMAGES.sumol.hero}
+                src={IMAGES.bim.team}
                 alt="Clash Detection — coordenação"
                 fill
                 className="object-cover"
@@ -130,7 +130,7 @@ export default function BimPage() {
       {/* ── 4D/5D — cinematic full-bleed band with text over image ────────── */}
       <section className="relative overflow-hidden" style={{ minHeight: "520px" }} data-testid="bim-4d5d">
         <Image
-          src={IMAGES.etar.hero}
+          src={IMAGES.bim.band}
           alt="Planeamento 4D/5D"
           fill
           className="object-cover object-center"
@@ -173,7 +173,7 @@ export default function BimPage() {
             {/* Image 5 — portrait, full height */}
             <div className="relative hidden lg:block">
               <Image
-                src={IMAGES.justice.gallery[0]}
+                src={IMAGES.bim.models}
                 alt="PRUMO — BIM em obra"
                 fill
                 className="object-cover"

@@ -52,7 +52,7 @@ export default function OrcamentoPage() {
         <div className="container mx-auto px-6 lg:px-10">
           <div className="max-w-3xl">
             <span className="eyebrow">{t.quote.eyebrow}</span>
-            <h2 className="font-title uppercase text-5xl md:text-6xl mt-5 text-brand-dark">
+            <h2 className="font-title uppercase text-4xl md:text-5xl mt-5 text-brand-dark">
               {t.quote.title}
             </h2>
             <p className="mt-5 max-w-2xl text-brand-dark/70 text-[15px] leading-relaxed">

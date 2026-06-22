@@ -166,7 +166,7 @@ export const translations = {
           featured: false,
         },
         {
-          title: "ETAR da Guia",
+          title: "Intervenção em ambiente industrial",
           subtitle: "Projeto do Novo Traçado das Condutas de Lamas — Fase Líquida",
           area: "Portugal",
           desc:
@@ -214,7 +214,7 @@ export const translations = {
         { label: "anos no setor", value: "+5" },
         { label: "projetos realizados", value: "+10" },
         { label: "áreas de atuação", value: "5" },
-        { label: "clientes satisfeitos", value: "100%" },
+        { label: "Em Alvará de Obras Públicas.", value: "120909" },
       ],
     },
     quote: {
@@ -435,7 +435,7 @@ export const translations = {
           featured: false,
         },
         {
-          title: "ETAR da Guia",
+          title: "Industrial Environment Intervention",
           subtitle: "New Sludge Pipeline Route — Liquid Phase",
           area: "Portugal",
           desc:
@@ -483,7 +483,7 @@ export const translations = {
         { label: "years in the field", value: "+5" },
         { label: "completed projects", value: "+10" },
         { label: "areas of expertise", value: "5" },
-        { label: "satisfied clients", value: "100%" },
+        { label: "Public Works License.", value: "120909" },,
       ],
     },
     quote: {

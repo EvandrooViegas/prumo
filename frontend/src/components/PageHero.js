@@ -31,7 +31,7 @@ export default function PageHero({
       <div className="relative z-10 w-full container mx-auto px-6 lg:px-10 pb-20 pt-40">
         <h1
           className="font-title text-white uppercase leading-[0.9] tracking-tight animate-fade-up"
-          style={{ fontSize: "clamp(3.5rem, 8.5vw, 9rem)" }}
+          style={{ fontSize: "clamp(2.8rem, 7vw, 7rem)" }}
           data-testid="page-hero-title"
         >
           {title}
