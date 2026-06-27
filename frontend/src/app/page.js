@@ -9,13 +9,13 @@ import { IMAGES } from "@/lib/images";
 export default function HomePage() {
   const { t } = useLanguage();
 
-  // Service images — one per area, in order matching t.services.list
+  // Service images — get main image from each service
   const serviceImages = [
-    IMAGES.services.design,
-    IMAGES.services.construction,
-    IMAGES.services.management,
-    IMAGES.services.research,
-    IMAGES.services.training,
+    IMAGES.services.design.main,
+    IMAGES.services.construction.main,
+    IMAGES.services.management.main,
+    IMAGES.services.research.main,
+    IMAGES.services.training.main,
   ];
 
   // Project card images for portfolio section
@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 lg:px-10 pt-40 pb-24">
           <p className="text-brand-gold text-xs font-bold tracking-[0.35em] uppercase mb-5 animate-fade-up">PRUMO SOALHEIRO</p>
-          <h1 className="font-title text-white uppercase leading-[1.1] max-w-5xl animate-fade-up" style={{ fontSize: "clamp(3rem, 7.5vw, 6.5rem)", animationDelay: "80ms" }} data-testid="home-hero-title">
+          <h1 className="font-title text-white uppercase leading-[1.1] max-w-5xl animate-fade-up" style={{ fontSize: "clamp(2rem, 5vw, 4.36rem)", animationDelay: "80ms" }} data-testid="home-hero-title">
             {t.slogan.main.split("\n").map((line, i) => (
               <span key={i} className="block">
                 {line.split(/\b(PROJETAR|CONSTRUIR|DESIGN|BUILD)\b/).map((part, j) =>
@@ -44,7 +44,7 @@ export default function HomePage() {
               </span>
             ))}
           </h1>
-          <p className="mt-7 text-white/65 text-lg md:text-xl font-light italic max-w-xl animate-fade-up" style={{ animationDelay: "180ms" }}>
+          <p className="mt-7 text-white/65 text-md md:text-lg font-light italic max-w-xl animate-fade-up" style={{ animationDelay: "180ms" }}>
             "{t.slogan.secondary.replace("\n", " ")}"
           </p>
           <p className="mt-5 max-w-2xl text-white/80 text-base leading-relaxed animate-fade-up" style={{ animationDelay: "260ms" }}>
@@ -191,7 +191,7 @@ export default function HomePage() {
             <p className="mt-6 max-w-md text-brand-dark/70 text-[15px] leading-relaxed">{t.home.differentialIntro}</p>
             {/* Facade/scaffolding work — matches Construction differential */}
             <div className="mt-10 relative overflow-hidden" style={{ height: "400px" }}>
-              <Image src={IMAGES.services.construction} alt="Construção — trabalho em fachadas" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+              <Image src={IMAGES.services.construction.main} alt="Construção — trabalho em fachadas" fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
               <div className="absolute inset-0 tile-overlay" />
               <div className="absolute inset-x-0 bottom-0 p-8 text-white">
                 <h3 className="font-title uppercase text-2xl">{t.differentials[0].title}</h3>

@@ -9,6 +9,8 @@ import {
   Facebook,
   Clock,
   ArrowRight,
+  House,
+  FileText
 } from "lucide-react";
 import Logo from "./Logo";
 import { useLanguage } from "./LanguageProvider";
@@ -126,6 +128,17 @@ export default function Footer() {
                 >
                   {COMPANY.email}
                 </a>
+              </li>
+            )}
+             {COMPANY.nipc   && (
+              <li className="flex gap-3">
+                <FileText size={16} className="text-brand-gold mt-0.5 shrink-0" />
+                <span
+                  className="hover:text-brand-gold transition-colors break-all"
+                  data-testid="footer-nipc"
+                >
+                  {COMPANY.nipc}
+                </span>
               </li>
             )}
             {COMPANY.phone && (

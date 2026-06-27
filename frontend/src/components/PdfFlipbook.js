@@ -274,14 +274,6 @@ export default function PdfFlipbook({ src, autoFlipInterval = 5000 }) {
         ))}
       </div>
 
-      {/* Download */}
-      <a
-        href={src}
-        download
-        className="flex items-center gap-1.5 text-brand-dark/40 hover:text-brand-gold transition-colors text-[11px] font-bold tracking-[0.18em] uppercase mt-1"
-      >
-        <Download size={12} /> Descarregar PDF
-      </a>
 
       {/* Slide animations */}
       <style>{`

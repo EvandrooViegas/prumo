@@ -4,19 +4,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import PageHero from "@/components/PageHero";
+import ServiceCarousel from "@/components/ServiceCarousel";
 import { useLanguage } from "@/components/LanguageProvider";
 import { IMAGES } from "@/lib/images";
 
 export default function ServicosPage() {
   const { t } = useLanguage();
 
-  // Each service tile image maps directly to its area
-  const serviceImages = [
-    IMAGES.services.design,       // Projeto / Design
-    IMAGES.services.construction, // Construção / Construction
-    IMAGES.services.management,   // Gestão / Management
-    IMAGES.services.research,     // Investigação & Inovação
-    IMAGES.services.training,     // Formação / Training
+  // Services with gallery support
+  const services = [
+    { key: "design", data: IMAGES.services.design },       // Projeto / Design
+    { key: "construction", data: IMAGES.services.construction }, // Construção / Construction
+    { key: "management", data: IMAGES.services.management },   // Gestão / Management
+    { key: "research", data: IMAGES.services.research },     // Investigação & Inovação
+    { key: "training", data: IMAGES.services.training },     // Formação / Training
   ];
 
   return (
@@ -34,8 +35,17 @@ export default function ServicosPage() {
 
           {/* Row 1: Design (large) + Construction */}
           <div className="grid lg:grid-cols-3 gap-6">
-            <ServiceTile service={t.services.list[0]} image={serviceImages[0]} index={0} className="lg:col-span-2" />
-            <ServiceTile service={t.services.list[1]} image={serviceImages[1]} index={1} />
+            <ServiceTile 
+              service={t.services.list[0]} 
+              serviceData={services[0].data}
+              index={0} 
+              className="lg:col-span-2" 
+            />
+            <ServiceTile 
+              service={t.services.list[1]} 
+              serviceData={services[1].data}
+              index={1} 
+            />
           </div>
 
           {/* Row 2: CTA card + Management (large) */}
@@ -49,13 +59,26 @@ export default function ServicosPage() {
                 {t.cta.contact} <ArrowRight size={14} />
               </Link>
             </aside>
-            <ServiceTile service={t.services.list[2]} image={serviceImages[2]} index={2} className="lg:col-span-2" />
+            <ServiceTile 
+              service={t.services.list[2]} 
+              serviceData={services[2].data}
+              index={2} 
+              className="lg:col-span-2" 
+            />
           </div>
 
           {/* Row 3: Research & Innovation + Training */}
           <div className="grid lg:grid-cols-2 gap-6">
-            <ServiceTile service={t.services.list[3]} image={serviceImages[3]} index={3} />
-            <ServiceTile service={t.services.list[4]} image={serviceImages[4]} index={4} />
+            <ServiceTile 
+              service={t.services.list[3]} 
+              serviceData={services[3].data}
+              index={3} 
+            />
+            <ServiceTile 
+              service={t.services.list[4]} 
+              serviceData={services[4].data}
+              index={4} 
+            />
           </div>
         </div>
       </section>
@@ -83,21 +106,40 @@ export default function ServicosPage() {
   );
 }
 
-function ServiceTile({ service, image, index, className = "" }) {
+function ServiceTile({ service, serviceData, index, className = "" }) {
+  const hasMultipleImages = serviceData.gallery && serviceData.gallery.length > 1;
+  const displayImage = serviceData.main || serviceData.gallery[0];
+
   return (
     <article
       className={`relative overflow-hidden group ${className}`}
       style={{ minHeight: "540px" }}
       data-testid={`servicos-tile-${index}`}
     >
-      <Image
-        src={image}
-        alt={service.title}
-        fill
-        className="object-cover transition-transform duration-700 group-hover:scale-105"
-        sizes="(max-width:1024px) 100vw, 66vw"
-      />
-      <div className="absolute inset-0 tile-overlay" />
+      {hasMultipleImages ? (
+        // Carousel for services with multiple images
+        <div className="h-full">
+          <ServiceCarousel 
+            images={serviceData.gallery} 
+            title={service.title}
+            autoFlipInterval={5000}
+          />
+        </div>
+      ) : (
+        // Single image for services with one image
+        <>
+          <Image
+            src={displayImage}
+            alt={service.title}
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+            sizes="(max-width:1024px) 100vw, 66vw"
+          />
+          <div className="absolute inset-0 tile-overlay" />
+        </>
+      )}
+
+      {/* Content overlay */}
       <div className="absolute inset-x-0 bottom-0 p-8 lg:p-10 text-white">
         <span className="text-brand-gold text-[10px] font-bold tracking-[0.28em] uppercase">
           {`Area ${index + 1}`}

@@ -173,7 +173,7 @@ export default function BimPage() {
             {/* Image 5 — portrait, full height */}
             <div className="relative hidden lg:block">
               <Image
-                src={IMAGES.bim.models}
+                src={IMAGES.bim.black}
                 alt="PRUMO — BIM em obra"
                 fill
                 className="object-cover"

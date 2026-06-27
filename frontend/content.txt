@@ -1,0 +1,571 @@
+================================================================================
+PRUMO SOALHEIRO — WEBSITE CONTENT
+Bilingual: Portuguese (PT) and English (EN)
+Last Updated: June 2026
+================================================================================
+
+SECTION: NAVIGATION & GLOBAL
+PT: Home|Sobre nós|Serviços|Projetos|BIM|Orçamento|Contacto
+EN: Home|About us|Services|Projects|BIM|Quote|Contact
+
+SECTION: CALL-TO-ACTION BUTTONS
+PT: Entrar em contacto|Nossos serviços|Ver mais|Solicitar|Orçamento
+EN: Get in touch|Our services|Read more|Request|Get a quote
+
+================================================================================
+PAGE: HOME
+================================================================================
+
+SLOGANS:
+PT: Visão para PROJETAR. Coragem para CONSTRUIR. | Sobre os ombros da experiência, construindo um futuro brilhante.
+EN: Vision to DESIGN. Courage to BUILD. | On the shoulders of experience, building a brilliant future.
+
+HERO SECTION:
+PT:
+  Title: PRUMO SOALHEIRO
+  Subtitle: A PRUMO SOALHEIRO nasce da união de experiência, conhecimento e visão. Assente nos pilares do Projeto, Construção, Gestão, Investigação e Formação, desenvolve soluções que conjugam engenharia, inovação e execução sustentável.
+
+EN:
+  Title: PRUMO SOALHEIRO
+  Subtitle: PRUMO SOALHEIRO was born from the union of experience, knowledge and vision. Built on the pillars of Design, Construction, Management, Research and Training, it develops solutions that combine engineering, innovation and sustainable delivery.
+
+INSTITUTIONAL TEXT:
+PT:
+  Acreditamos que o progresso resulta da combinação entre trabalho árduo, conhecimento técnico e capacidade de antecipar desafios. Inspirados pelos ensinamentos do passado, atuamos no presente com responsabilidade e projetamos o futuro com confiança.
+  
+  Aplicamos princípios científicos, tecnologias digitais e metodologias avançadas para tornar cada projeto mais eficiente, produtivo e sustentável. O nosso compromisso não é apenas construir melhor, mas construir de forma mais inteligente.
+  
+  Mais do que executar obras, criamos valor, conhecimento e impacto duradouro para os nossos clientes, parceiros e comunidades.
+
+EN:
+  We believe that progress results from a combination of hard work, technical knowledge and the ability to anticipate challenges. Inspired by the lessons of the past, we act in the present with responsibility and design the future with confidence.
+  
+  We apply scientific principles, digital technologies and advanced methodologies to make every project more efficient, productive and sustainable. Our commitment is not just to build better, but to build smarter.
+  
+  More than executing works, we create lasting value, knowledge and impact for our clients, partners and communities.
+
+SERVICES SECTION:
+PT:
+  Eyebrow: O que fazemos
+  Title: As nossas áreas
+  Intro: Cinco áreas de atuação integradas que cobrem o ciclo completo do edificado — do projeto à formação, com foco na qualidade, inovação e sustentabilidade.
+
+EN:
+  Eyebrow: What we do
+  Title: Our areas
+  Intro: Five integrated areas of expertise covering the full building lifecycle — from design to training, with a focus on quality, innovation and sustainability.
+
+PORTFOLIO SECTION:
+PT:
+  Eyebrow: Portfólio
+  Title: Projetos em destaque
+  Intro: Uma seleção das obras e projetos realizados pela PRUMO SOALHEIRO — cada trabalho é um compromisso com a excelência técnica e o detalhe construtivo.
+
+EN:
+  Eyebrow: Portfolio
+  Title: Featured projects
+  Intro: A selection of works and projects delivered by PRUMO SOALHEIRO — every engagement a commitment to technical excellence and craftsmanship.
+
+DIFFERENTIALS SECTION:
+PT:
+  Eyebrow: O nosso diferencial
+  Title: Porquê escolher-nos?
+  Intro: Combinamos experiência de campo, gestão rigorosa de obra e relação próxima com o cliente, do primeiro contacto à entrega das chaves.
+  
+  Cards:
+    1. Equipas multidisciplinares | Reunimos engenheiros, projetistas, gestores de obra e especialistas BIM numa única equipa, garantindo coerência técnica e eficiência em cada projeto.
+    2. Gestão transparente | Relatórios periódicos, comunicação direta e total visibilidade sobre o progresso da obra — o cliente acompanha tudo, da conceção à entrega.
+    3. Inovação aplicada | Aplicamos princípios científicos, tecnologias digitais e metodologias avançadas para tornar cada projeto mais eficiente, produtivo e sustentável.
+    4. Compromisso com a qualidade | Procuramos continuamente os mais elevados padrões de qualidade, com controlo rigoroso em cada fase do projeto e da construção.
+
+EN:
+  Eyebrow: What sets us apart
+  Title: Why choose us?
+  Intro: We combine field experience, rigorous project management and a close relationship with our clients, from the first call to final handover.
+  
+  Cards:
+    1. Multidisciplinary teams | We bring together engineers, designers, site managers and BIM specialists in one team, ensuring technical coherence and efficiency in every project.
+    2. Transparent management | Regular reports, direct communication and full visibility of project progress — clients see everything, from conception to handover.
+    3. Applied innovation | We apply scientific principles, digital technologies and advanced methodologies to make every project more efficient, productive and sustainable.
+    4. Commitment to quality | We continuously pursue the highest quality standards, with rigorous control at every stage of design and construction.
+
+QUOTES/BELIEFS SECTION:
+PT:
+  Eyebrow: Pensamento PRUMO
+  Title: As nossas convicções
+  Quotes:
+    - Construir é mais do que erguer estruturas. É criar valor para as gerações futuras.
+    - A experiência mostra o caminho. A inovação permite ir mais longe.
+    - Projetamos com rigor. Construímos com excelência.
+    - Transformamos conhecimento técnico em soluções concretas.
+    - A engenharia é a nossa linguagem. A inovação é o nosso compromisso.
+    - Cada projeto é uma oportunidade para fazer melhor.
+    - O futuro constrói-se com visão, conhecimento e ação.
+    - Somos projetistas, construtores, gestores, investigadores e formadores.
+
+EN:
+  Eyebrow: PRUMO thinking
+  Title: Our convictions
+  Quotes:
+    - Building is more than raising structures. It is creating value for future generations.
+    - Experience shows the way. Innovation allows us to go further.
+    - We design with rigour. We build with excellence.
+    - We transform technical knowledge into concrete solutions.
+    - Engineering is our language. Innovation is our commitment.
+    - Every project is an opportunity to do better.
+    - The future is built with vision, knowledge and action.
+    - We are designers, builders, managers, researchers and trainers.
+
+================================================================================
+PAGE: SERVICES
+================================================================================
+
+HERO:
+PT:
+  Title: Serviços
+  Subtitle: Cinco áreas de atuação integradas que cobrem o ciclo completo do edificado — do projeto à formação, com foco na qualidade, inovação e sustentabilidade.
+
+EN:
+  Title: Services
+  Subtitle: Five integrated areas of expertise covering the full building lifecycle — from design to training, with a focus on quality, innovation and sustainability.
+
+SIDE CARD:
+PT: Cada projeto começa com uma visita ao local, levantamento de necessidades e um orçamento transparente. Falamos a sua linguagem — sem surpresas, sem custos escondidos.
+
+EN: Every project starts with a site visit, a needs assessment and a transparent quote. We speak your language — no surprises, no hidden costs.
+
+SERVICE 1 — DESIGN/PROJETO:
+PT:
+  Title: Projeto
+  Description: Desenvolvimento de soluções de engenharia multidisciplinares, com forte aposta em BIM, digitalização e otimização técnica.
+  Bullets:
+    - Modelação BIM de Arquitetura, Estruturas e Especialidades
+    - Coordenação e compatibilização multidisciplinar (Clash Detection)
+    - Plataformas colaborativas e metodologias OpenBIM
+    - Extração de quantidades, planeamento 4D e controlo de custos 5D
+
+EN:
+  Title: Design
+  Description: Development of multidisciplinary engineering solutions with a strong focus on BIM, digitalisation and technical optimisation.
+  Bullets:
+    - BIM modelling — Architecture, Structures and MEP
+    - Multidisciplinary coordination and Clash Detection
+    - Collaborative platforms and OpenBIM methodologies
+    - Quantity take-off, 4D planning and 5D cost control
+
+SERVICE 2 — CONSTRUCTION/CONSTRUÇÃO:
+PT:
+  Title: Construção
+  Description: Execução de obras novas, reabilitação e reforço estrutural, com foco na qualidade, segurança e produtividade.
+  Bullets:
+    - Execução de obras novas
+    - Reabilitação e conservação de edifícios
+    - Reforço estrutural
+    - Controlo de qualidade e segurança em obra
+
+EN:
+  Title: Construction
+  Description: Execution of new works, rehabilitation and structural strengthening, with a focus on quality, safety and productivity.
+  Bullets:
+    - New construction works
+    - Building rehabilitation and conservation
+    - Structural strengthening
+    - On-site quality and safety control
+
+SERVICE 3 — MANAGEMENT/GESTÃO:
+PT:
+  Title: Gestão
+  Description: Planeamento, coordenação e controlo de recursos para maximização da eficiência operacional.
+  Bullets:
+    - Planeamento e controlo de recursos
+    - Coordenação de equipas e empreiteiros
+    - Maximização da eficiência operacional
+
+EN:
+  Title: Management
+  Description: Planning, coordination and resource control to maximise operational efficiency.
+  Bullets:
+    - Resource planning and control
+    - Team and contractor coordination
+    - Operational efficiency maximisation
+
+SERVICE 4 — RESEARCH & INNOVATION/INVESTIGAÇÃO E INOVAÇÃO:
+PT:
+  Title: Investigação e Inovação
+  Description: Aplicação da ciência e da inovação para melhorar processos, métodos construtivos e desempenho das infraestruturas.
+  Bullets:
+    - Melhoria de processos construtivos
+    - Aplicação de ciência e tecnologia ao setor
+    - Desempenho e sustentabilidade das infraestruturas
+
+EN:
+  Title: Research & Innovation
+  Description: Applying science and innovation to improve processes, construction methods and infrastructure performance.
+  Bullets:
+    - Improvement of construction processes
+    - Application of science and technology to the sector
+    - Infrastructure performance and sustainability
+
+SERVICE 5 — TRAINING/FORMAÇÃO:
+PT:
+  Title: Formação
+  Description: Transferência de conhecimento para profissionais, empresas e organizações do setor.
+  Bullets:
+    - Formação para profissionais do setor
+    - Programas para empresas e organizações
+    - Transferência de conhecimento técnico e científico
+
+EN:
+  Title: Training
+  Description: Knowledge transfer for professionals, companies and organisations in the sector.
+  Bullets:
+    - Training for sector professionals
+    - Corporate and organisational programmes
+    - Technical and scientific knowledge transfer
+
+================================================================================
+PAGE: BIM
+================================================================================
+
+HERO:
+PT:
+  Title: BIM
+  Subtitle: Modelação, Coordenação e Compatibilização de Projetos BIM — transformamos dados em conhecimento útil para empreendimentos mais eficientes, sustentáveis e preparados para o futuro.
+
+EN:
+  Title: BIM
+  Subtitle: BIM Modelling, Coordination and Clash Detection — we transform data into useful knowledge for more efficient, sustainable and future-ready projects.
+
+CONTENT SECTION:
+PT:
+  Eyebrow: Construção Digital
+  Title: BIM — Modelação da Informação da Construção
+  Intro: A PRUMO SOALHEIRO disponibiliza serviços especializados de Modelação da Informação da Construção (BIM – Building Information Modeling), apoiando projetistas, donos de obra, empreiteiros e gestores de ativos ao longo de todo o ciclo de vida dos empreendimentos.
+
+EN:
+  Eyebrow: Digital Construction
+  Title: BIM — Building Information Modelling
+  Intro: PRUMO SOALHEIRO provides specialised Building Information Modelling (BIM) services, supporting designers, clients, contractors and asset managers throughout the full lifecycle of every project.
+
+BIM CONTENT BLOCKS:
+PT:
+  Why: Acreditamos que a digitalização da construção constitui um dos principais fatores de transformação do setor. Por esse motivo, integramos metodologias BIM nos processos de projeto, coordenação e gestão, promovendo maior rigor técnico, redução de erros, otimização de recursos e melhoria da tomada de decisão.
+  
+  Models: Desenvolvemos modelos digitais tridimensionais que incorporam informação geométrica, técnica e funcional dos diferentes elementos construtivos, permitindo uma melhor visualização, análise e controlo dos projetos antes do início da execução da obra.
+  
+  Coordination: Os nossos serviços incluem a modelação BIM de Arquitetura, Estruturas e Especialidades, assegurando a integração coerente das diferentes disciplinas num ambiente colaborativo. Esta abordagem permite antecipar incompatibilidades, minimizar retrabalhos e reduzir riscos durante a fase de construção.
+  
+  Clash: Realizamos processos de coordenação e compatibilização multidisciplinar através da deteção e análise de interferências (Clash Detection), identificando conflitos entre elementos estruturais, arquitetónicos e instalações técnicas antes da sua materialização em obra.
+  
+  OpenBIM: Através da utilização de plataformas colaborativas e metodologias OpenBIM, promovemos a partilha estruturada da informação entre todos os intervenientes do projeto, contribuindo para uma comunicação mais eficiente e para uma gestão mais transparente dos processos.
+  
+  Dimensions: Os modelos desenvolvidos podem ainda servir de suporte à extração automática de quantidades, planeamento da construção (4D), estimativa e controlo de custos (5D), gestão documental e operação futura dos ativos construídos.
+  
+  Team: A nossa equipa possui formação avançada e experiência prática em BIM, engenharia, projeto e construção, permitindo estabelecer uma ligação efetiva entre o ambiente digital e a realidade da obra. Esta combinação de competências constitui um dos principais fatores diferenciadores da PRUMO SOALHEIRO.
+  
+  Closing: Mais do que produzir modelos tridimensionais, procuramos transformar dados em conhecimento útil, apoiando os nossos clientes na conceção, execução e gestão de empreendimentos mais eficientes, sustentáveis e preparados para os desafios futuros.
+
+EN:
+  Why: We believe that construction digitalisation is one of the main drivers of sector transformation. We integrate BIM methodologies in design, coordination and management processes, promoting greater technical rigour, error reduction, resource optimisation and improved decision-making.
+  
+  Models: We develop 3D digital models that embed geometric, technical and functional information from all building elements, enabling better visualisation, analysis and control of projects before construction begins.
+  
+  Coordination: Our services cover BIM modelling for Architecture, Structures and MEP, ensuring coherent integration of all disciplines in a collaborative environment. This approach anticipates incompatibilities, minimises rework and reduces risk during construction.
+  
+  Clash: We carry out multidisciplinary coordination and Clash Detection processes, identifying conflicts between structural, architectural and MEP elements before they materialise on site.
+  
+  OpenBIM: Using collaborative platforms and OpenBIM methodologies, we promote structured information sharing between all project stakeholders, contributing to more efficient communication and transparent process management.
+  
+  Dimensions: The models can also support automated quantity take-off, 4D construction planning, 5D cost estimation and control, document management and future asset operation.
+  
+  Team: Our team has advanced BIM training and hands-on experience in engineering, design and construction, enabling an effective link between the digital environment and site reality. This combination of skills is one of PRUMO SOALHEIRO's key differentiators.
+  
+  Closing: More than producing 3D models, we seek to transform data into useful knowledge, supporting our clients in the design, execution and management of more efficient, sustainable and future-ready projects.
+
+================================================================================
+PAGE: PROJECTS
+================================================================================
+
+HERO:
+PT:
+  Title: Projetos
+  Subtitle: Obras e projetos realizados pela PRUMO SOALHEIRO — diferentes escalas, o mesmo compromisso com a excelência técnica e o cumprimento de prazos.
+
+EN:
+  Title: Projects
+  Subtitle: Works and projects delivered by PRUMO SOALHEIRO — different scales, the same commitment to technical excellence and on-time delivery.
+
+PROJECT 1 — MINISTRY OF JUSTICE:
+PT:
+  Title: Ministério da Justiça
+  Subtitle: Reabilitação das Fachadas e Cobertura
+  Area: Lisboa, Portugal
+  Description: Participação na intervenção de reabilitação de um edifício de elevado valor arquitetónico e institucional localizado na zona histórica de Lisboa. Os trabalhos incluem operações especializadas de conservação e recuperação das fachadas exteriores e da cobertura, contribuindo para a preservação do património edificado e para o prolongamento da vida útil do imóvel.
+  Tags: Reabilitação de edifícios · Conservação patrimonial · Gestão da construção · Controlo de qualidade
+  Featured: true
+  Tag: Obra Principal
+
+EN:
+  Title: Ministry of Justice
+  Subtitle: Façade and Roof Rehabilitation
+  Area: Lisbon, Portugal
+  Description: Participation in the rehabilitation of a building of high architectural and institutional value located in the historic area of Lisbon. Works include specialised conservation and restoration of the exterior façades and roof, contributing to the preservation of the built heritage and the extension of the building's useful life.
+  Tags: Building rehabilitation · Heritage conservation · Construction management · Quality control
+  Featured: true
+  Tag: Main Project
+
+PROJECT 2 — SUMOL + COMPAL:
+PT:
+  Title: Sumol + Compal
+  Subtitle: Intervenção nas Fachadas — Carnaxide
+  Area: Carnaxide, Portugal
+  Description: Participação nos trabalhos de manutenção e reabilitação das fachadas de um dos principais edifícios corporativos do setor agroalimentar em Portugal. A intervenção visa melhorar o desempenho funcional, a durabilidade e a imagem arquitetónica do edifício.
+  Tags: Reabilitação de fachadas · Manutenção de edifícios · Planeamento de obra
+  Featured: false
+  Tag: Em Destaque
+
+EN:
+  Title: Sumol + Compal
+  Subtitle: Façade Intervention — Carnaxide
+  Area: Carnaxide, Portugal
+  Description: Participation in maintenance and rehabilitation works on the façades of one of Portugal's leading corporate buildings in the agri-food sector. The intervention aims to improve the functional performance, durability and architectural image of the building.
+  Tags: Façade rehabilitation · Building maintenance · Construction planning
+  Featured: false
+  Tag: Featured
+
+PROJECT 3 — INDUSTRIAL ENVIRONMENT INTERVENTION:
+PT:
+  Title: Intervenção em ambiente industrial
+  Subtitle: Projeto do Novo Traçado das Condutas de Lamas — Fase Líquida
+  Area: Portugal
+  Description: Participação no desenvolvimento de soluções de engenharia associadas à modernização de infraestruturas de saneamento e tratamento de águas residuais. Este projeto integra sistemas essenciais para a gestão ambiental e sustentabilidade dos recursos hídricos.
+  Tags: Infraestruturas Hidráulicas · Engenharia de Saneamento · Modelação de Infraestruturas e Redes
+  Featured: false
+  Tag: Em Destaque
+
+EN:
+  Title: Industrial Environment Intervention
+  Subtitle: New Sludge Pipeline Route — Liquid Phase
+  Area: Portugal
+  Description: Participation in the development of engineering solutions for the modernisation of sanitation and wastewater treatment infrastructure. This project integrates essential systems for environmental management and water resource sustainability.
+  Tags: Hydraulic Infrastructure · Sanitation Engineering · Infrastructure and Network Modelling
+  Featured: false
+  Tag: Featured
+
+================================================================================
+PAGE: ABOUT US
+================================================================================
+
+HERO:
+PT:
+  Title: Sobre nós
+  Subtitle: A PRUMO SOALHEIRO nasce da união de experiência, conhecimento e visão. Assente nos pilares do Projeto, Construção, Gestão, Investigação e Formação.
+
+EN:
+  Title: About us
+  Subtitle: PRUMO SOALHEIRO was born from the union of experience, knowledge and vision. Built on the pillars of Design, Construction, Management, Research and Training.
+
+MISSION, VISION & VALUES SECTION:
+PT:
+  Eyebrow: Missão, Visão & Valores
+  Title: Quem somos
+  Mission: Desenvolver soluções integradas de engenharia, construção e gestão de projetos, criando valor através da excelência técnica, da inovação, da produtividade e da sustentabilidade, contribuindo para o desenvolvimento das infraestruturas e para a prosperidade das comunidades onde atuamos.
+  Vision: Ser uma referência nacional e internacional nos setores da engenharia, construção e inovação, reconhecida pela capacidade de transformar conhecimento científico em soluções práticas, sustentáveis e economicamente eficientes, contribuindo para a modernização do setor da construção.
+
+EN:
+  Eyebrow: Mission, Vision & Values
+  Title: Who we are
+  Mission: To develop integrated engineering, construction and project management solutions, creating value through technical excellence, innovation, productivity and sustainability, contributing to infrastructure development and the prosperity of the communities where we operate.
+  Vision: To be a national and international reference in the engineering, construction and innovation sectors, recognised for the ability to transform scientific knowledge into practical, sustainable and economically efficient solutions, contributing to the modernisation of the construction sector.
+
+VALUES SECTION:
+PT:
+  Eyebrow: Os nossos valores
+  Title: Princípios que nos guiam
+  Values:
+    1. Integridade | Atuar com ética, transparência e responsabilidade.
+    2. Excelência | Procurar continuamente os mais elevados padrões de qualidade.
+    3. Inovação | Promover a utilização da ciência, tecnologia e digitalização como motores de evolução.
+    4. Sustentabilidade | Criar soluções que conciliem desenvolvimento económico, impacto social e responsabilidade ambiental.
+    5. Compromisso | Honrar os compromissos assumidos com clientes, colaboradores e parceiros.
+    6. Conhecimento | Valorizar a aprendizagem contínua, a investigação e a formação profissional.
+    7. Coragem | Enfrentar desafios com determinação e capacidade de decisão.
+    8. Visão | Antecipar oportunidades e construir soluções para o futuro.
+
+EN:
+  Eyebrow: Our values
+  Title: Principles that guide us
+  Values:
+    1. Integrity | Acting with ethics, transparency and responsibility.
+    2. Excellence | Continuously pursuing the highest quality standards.
+    3. Innovation | Promoting the use of science, technology and digitalisation as drivers of evolution.
+    4. Sustainability | Creating solutions that reconcile economic development, social impact and environmental responsibility.
+    5. Commitment | Honouring commitments made to clients, employees and partners.
+    6. Knowledge | Valuing continuous learning, research and professional training.
+    7. Courage | Facing challenges with determination and decision-making capacity.
+    8. Vision | Anticipating opportunities and building solutions for the future.
+
+STATISTICS SECTION:
+PT:
+  Eyebrow: Em números
+  Title: A nossa experiência
+  Stats:
+    - years in the field: +5
+    - completed projects: +10
+    - areas of expertise: 5
+    - Public Works License: 120909
+
+EN:
+  Eyebrow: By the numbers
+  Title: Our experience
+  Stats:
+    - years in the field: +5
+    - completed projects: +10
+    - areas of expertise: 5
+    - Public Works License: 120909
+
+================================================================================
+PAGE: QUOTE / ORÇAMENTO
+================================================================================
+
+HERO:
+PT:
+  Title: Orçamento
+  Subtitle: Descreva o seu projeto e receba uma proposta detalhada, sem compromisso. Respondemos em 48 horas úteis.
+
+EN:
+  Title: Quote
+  Subtitle: Tell us about your project and receive a detailed proposal, no strings attached. We respond within 48 working hours.
+
+CONTENT:
+PT:
+  Eyebrow: Sem compromisso
+  Title: Peça o seu orçamento
+  Intro: Preencha o formulário com a maior quantidade de informação possível sobre a obra. Quanto mais detalhe, mais preciso será o nosso orçamento e a estimativa de prazo de execução.
+  Form Fields: Name | Company | Email | Description of project
+  Submit Button: Solicitar orçamento
+  Success Message: Pedido enviado com sucesso. Entraremos em contacto em breve.
+  Error Message: Não foi possível enviar o pedido. Tente novamente.
+
+EN:
+  Eyebrow: No commitment
+  Title: Request your quote
+  Intro: Fill in the form with as much information as possible about the project. The more detail you share, the more accurate our quote and timeline estimate will be.
+  Form Fields: Name | Company | Email | Description of project
+  Submit Button: Request quote
+  Success Message: Request sent successfully. We will be in touch soon.
+  Error Message: Unable to send request. Please try again.
+
+================================================================================
+PAGE: CONTACT
+================================================================================
+
+HERO:
+PT:
+  Title: Contacto
+  Subtitle: Estamos disponíveis para esclarecer dúvidas, agendar visitas a obra ou preparar uma proposta detalhada para o seu projeto. Fale connosco — respondemos em 48 horas úteis.
+
+EN:
+  Title: Contact
+  Subtitle: We are available to clarify any doubts, schedule on-site visits or prepare a detailed proposal for your project. Reach out — we reply within 48 working hours.
+
+CONTENT:
+PT:
+  Eyebrow: Contacto
+  Title: Entre em contacto connosco
+  Intro: Pode contactar-nos pelos canais abaixo ou utilizar o formulário de orçamento. Para visitas ao escritório, agradecemos marcação prévia para garantir que estamos disponíveis.
+  
+  Contact Fields:
+    Address: [To be filled by client]
+    Email: [To be filled by client]
+    Phone: [To be filled by client]
+    Instagram: [To be filled by client]
+    TikTok: [To be filled by client]
+    Facebook: [To be filled by client]
+    Hours: [To be filled by client]
+
+EN:
+  Eyebrow: Contact
+  Title: Get in touch with us
+  Intro: You can reach us through the channels below or via the quote form. For office visits, please book in advance so we can make sure we are available to receive you.
+  
+  Contact Fields:
+    Address: [To be filled by client]
+    Email: [To be filled by client]
+    Phone: [To be filled by client]
+    Instagram: [To be filled by client]
+    TikTok: [To be filled by client]
+    Facebook: [To be filled by client]
+    Hours: [To be filled by client]
+
+================================================================================
+FOOTER
+================================================================================
+
+PT:
+  Footer Rights: Todos os direitos reservados
+  Footer CTA: Entrar em contacto
+  Footer Navigation: Navegação
+  Navigation Links: Home | Sobre nós | Serviços | Projetos | BIM | Orçamento | Contacto
+
+EN:
+  Footer Rights: All rights reserved
+  Footer CTA: Get in touch
+  Footer Navigation: Navigation
+  Navigation Links: Home | About us | Services | Projects | BIM | Quote | Contact
+
+================================================================================
+IMAGE REFERENCES
+================================================================================
+
+HEROES:
+  - heroes/home.jpg — Homepage banner
+  - heroes/about.jpg — About page banner
+  - heroes/services.jpg — Services page banner
+  - heroes/projects.jpg — Projects page banner
+  - heroes/bim.jpg — BIM page banner
+  - heroes/quote.jpg — Quote/Orçamento page banner
+  - heroes/contact.jpg — Contact page banner
+
+BIM PAGE IMAGES:
+  - bim/intro.jpg — Introduction section
+  - bim/models.jpg — 3D Models section
+  - bim/coordination.jpg — Coordination section
+  - bim/clash.jpg — Clash Detection section
+  - bim/4d5d.jpg — 4D/5D Dimensions section
+  - bim/team.jpg — Team expertise section
+
+PROJECTS:
+  Ministry of Justice:
+    - projects/ministry-of-justice/hero.jpg
+    - projects/ministry-of-justice/facade-wide.jpg
+    - projects/ministry-of-justice/roof.jpg
+    - projects/ministry-of-justice/facade-01.jpg through facade-07.jpg
+  
+  Sumol + Compal:
+    - projects/sumol-compal/hero.jpg
+    - projects/sumol-compal/facade-01.jpg through facade-03.jpg
+  
+  Industrial Environment:
+    - projects/etar-guia/hero.jpg
+    - projects/etar-guia/site-01.jpg through site-05.jpg
+
+SERVICES ICONS/IMAGES:
+  - services/design.jpg
+  - services/construction.jpg
+  - services/management.jpg
+  - services/research.jpg
+  - services/training.jpg
+
+ABOUT PAGE:
+  - about/main.jpg
+  - about/secondary.jpg
+  - about/portrait.jpg
+  - about/numbers-bg.jpg
+
+TEAM:
+  - team/portrait.png
+
+================================================================================
+END OF CONTENT FILE
+================================================================================

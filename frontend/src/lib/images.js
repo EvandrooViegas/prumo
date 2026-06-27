@@ -119,17 +119,48 @@ export const IMAGES = {
       I("projects/etar-guia/site-03.jpg"),
       I("projects/etar-guia/site-04.jpg"),
       I("projects/etar-guia/site-05.jpg"),
+      I("projects/etar-guia/site-06.jpg"),
+      I("projects/etar-guia/site-07.jpg"),
     ],
   },
 
   // ── SERVICE TILES ───────────────────────────────────────────────────────────
-  // One image per service area — used on /servicos and home services section
+  // Multiple images per service area with carousel gallery support
+  // To add more images to a service:
+  // 1. Drop new images in public/images/services/<service-name>/ folder
+  // 2. Add paths to the gallery array below (e.g., design-02.jpg, design-03.jpg)
+  // 3. Carousel shows all gallery images with auto-play and indicators
   services: {
-    design:       I("services/design.jpg"),
-    construction: I("services/construction.jpg"),
-    management:   I("services/management.jpg"),
-    research:     I("services/research.jpg"),
-    training:     I("services/training.jpg"),
+    design: {
+      main: I("services/design.jpg"),
+      gallery: [
+        I("services/design.jpg"),
+      ],
+    },
+    construction: {
+      main: I("services/construction.jpg"),
+      gallery: [
+        I("services/construction.jpg"),
+      ],
+    },
+    management: {
+      main: I("services/management.jpg"),
+      gallery: [
+        I("services/management.jpg"),
+      ],
+    },
+    research: {
+      main: I("services/research.jpg"),
+      gallery: [
+        I("services/research.jpg"),
+      ],
+    },
+    training: {
+      main: I("services/training.jpg"),
+      gallery: [
+        I("services/training.jpg"),
+      ],
+    },
   },
 
   // ── ABOUT PAGE ──────────────────────────────────────────────────────────────
@@ -148,6 +179,7 @@ export const IMAGES = {
     clash:  I("bim/clash.jpg"),   // Clash Detection & OpenBIM section (1501×944)
     band:   I("bim/4d5d.jpg"),    // 4D/5D cinematic full-bleed band (1600×1200)
     team:   I("bim/team.jpg"),    // Team & Closing section portrait (899×1599)
+    black: I("bim/black.jpg")
   },
 
   // ── TEAM ────────────────────────────────────────────────────────────────────

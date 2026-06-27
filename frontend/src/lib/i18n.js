@@ -7,7 +7,7 @@ export const translations = {
       home: "Home",
       about: "Sobre nós",
       services: "Serviços",
-      projects: "Projetos",
+      projects: "Projetos e Obras",
       bim: "BIM",
       quote: "Orçamento",
       contact: "Contacto",
@@ -141,7 +141,7 @@ export const translations = {
       closing: "Mais do que produzir modelos tridimensionais, procuramos transformar dados em conhecimento útil, apoiando os nossos clientes na conceção, execução e gestão de empreendimentos mais eficientes, sustentáveis e preparados para os desafios futuros.",
     },
     projects: {
-      heroTitle: "Projetos",
+      heroTitle: "Projetos Realizados",
       heroSubtitle:
         "Obras e projetos realizados pela PRUMO SOALHEIRO — diferentes escalas, o mesmo compromisso com a excelência técnica e o cumprimento de prazos.",
       tag: "Em Destaque",
@@ -214,7 +214,7 @@ export const translations = {
         { label: "anos no setor", value: "+5" },
         { label: "projetos realizados", value: "+10" },
         { label: "áreas de atuação", value: "5" },
-        { label: "Em Alvará de Obras Públicas.", value: "120909" },
+        { label: "120909", value: "Alvará de Obra Pública" },
       ],
     },
     quote: {
@@ -483,7 +483,7 @@ export const translations = {
         { label: "years in the field", value: "+5" },
         { label: "completed projects", value: "+10" },
         { label: "areas of expertise", value: "5" },
-        { label: "Public Works License.", value: "120909" },,
+        { label: "Public Works License.", value: "120909" },
       ],
     },
     quote: {

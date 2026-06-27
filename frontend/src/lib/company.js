@@ -11,41 +11,41 @@ export const COMPANY = {
   shortName: "PRUMO",
 
   // Contact details
-  email: "geral@prumosoalheiro.pt",
-  phone: "+351 000 000 000", // E.164 friendly format, e.g. +351 912 345 678
-  whatsapp: "",              // optional, e.g. "+351912345678" (no spaces)
+  email: "prumosoalheiro@gmail.com",
+  phone: "+351 968 382 886", // E.164 friendly format, e.g. +351 912 345 678
+  whatsapp: "+351968382886",              // optional, e.g. "+351912345678" (no spaces)
 
   // Address
   address: {
-    line1: "Rua Exemplo, 000",
-    line2: "0000-000 Cidade",
+    line1: "Rua Cavaleiro de Oliveira, 57 C",
+    line2: "1170-086 Lisboa",
     country: "Portugal",
     // Used for the Google Maps embed on the contact page.
     // Anything that resolves on Google Maps works (full address, plus codes,
     // place name, lat/lng, etc.).
-    mapsQuery: "Lisboa, Portugal",
+    mapsQuery: "Rua Cavaleiro de Oliveira, 57 C, 1170-086 Lisboa, Portugal",
   },
 
   // Social profiles — leave the URL empty to hide the link site-wide.
   social: {
     instagram: {
-      handle: "@prumosoalheiro",
-      url: "https://instagram.com/prumosoalheiro",
+      handle: "@prumo.soalheiro",
+      url: "https://instagram.com/prumo.soalheiro",
     },
     tiktok: {
-      handle: "@prumosoalheiro",
-      url: "https://www.tiktok.com/@prumosoalheiro",
+      handle: "@prumo.soalheiro",
+      url: "https://www.tiktok.com/@prumo.soalheiro",
     },
     facebook: {
-      handle: "@prumosoalheiro",
-      url: "https://facebook.com/prumosoalheiro",
+      handle: "@prumo.soalheiro",
+      url: "https://facebook.com/prumo.soalheiro",
     },
     linkedin: {
       handle: "",
       url: "",
     },
   },
-
+  nipc: "NIPC: 519 220 153",
   // Working hours (free text — appears on contact page / footer)
   hours: "Seg–Sex · 09:00 – 18:00",
 
